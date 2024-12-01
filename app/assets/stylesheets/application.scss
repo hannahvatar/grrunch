@@ -1,7 +1,11 @@
 // Abstract
 @import "abstract/variables";
 
-// Components
+// First import variables
+@import "abstract/variables";
+
+// Then import components
+@import "components/navbar";
 @import "components/buttons";
 @import "components/dropdown";
 @import "components/container";
