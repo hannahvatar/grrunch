@@ -38,6 +38,7 @@
 
         &:active {
             background-color: $orange-400; 
+        }
 
         &:disabled {
             opacity: 40%;
@@ -45,7 +46,7 @@
     }
 
     // Modifier: Green style
-    &--white {
+    &--green {
         background-color: $green-400;
 
         &:hover {
@@ -61,7 +62,6 @@
         }
     }
 }
-
 
 .btn-secondary {
     // Base button styles
@@ -79,7 +79,6 @@
     text-decoration: none;
     margin: $spacing-8;
 
-    // Default button states
     &:hover {
         background-color: $orange-200;
     }
@@ -98,11 +97,11 @@
         border: 2px dashed black;
 
         &:hover {
-            background-color: $orange-200; // Same hover as default
+            background-color: $orange-200;
         }
 
         &:active {
-            background-color: $orange-400; // Example: revert to primary active style
+            background-color: $orange-400;
         }
 
         &:disabled {
@@ -110,4 +109,3 @@
         }
     }
 }
-
