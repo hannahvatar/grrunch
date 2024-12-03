@@ -10,9 +10,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  # "As a guest user, I want to read about Grrunch"
-  root to:"pages#home"
-
   # "As a guest user, I want to search a product type"
   get "/search?type=:product_type" => "products#index"
 
