@@ -1,0 +1,111 @@
+.btn-primary {
+  // Base button styles
+  display: inline-block;
+  background-color: $orange-400;
+  padding: $spacing-12 $spacing-16;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 100px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin: $spacing-8;
+
+  // Default button states
+  &:hover {
+      background-color: $orange-200;
+  }
+
+  &:active {
+      background-color: white;
+  }
+
+  &:disabled {
+      opacity: 40%;
+      cursor: not-allowed;
+  }
+
+  // Modifier: White style
+  &--white {
+      background-color: white;
+
+      &:hover {
+          background-color: $orange-200;
+      }
+
+      &:active {
+          background-color: $orange-400;
+      }
+
+      &:disabled {
+          opacity: 40%;
+      }
+  }
+
+  // Modifier: Green style
+  &--green {
+      background-color: $green-400;
+
+      &:hover {
+          background-color: $green-200;
+      }
+
+      &:active {
+          background-color: white;
+      }
+
+      &:disabled {
+          opacity: 40%;
+      }
+  }
+}
+
+.btn-secondary {
+  // Base button styles
+  display: inline-block;
+  background-color: white;
+  padding: $spacing-12 $spacing-16;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 100px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin: $spacing-8;
+
+  &:hover {
+      background-color: $orange-200;
+  }
+
+  &:active {
+      background-color: white;
+  }
+
+  &:disabled {
+      opacity: 40%;
+      cursor: not-allowed;
+  }
+
+  // Modifier: dashed border
+  &--dashed {
+      border: 2px dashed black;
+
+      &:hover {
+          background-color: $orange-200;
+      }
+
+      &:active {
+          background-color: $orange-400;
+      }
+
+      &:disabled {
+          opacity: 40%;
+      }
+  }
+}

@@ -1,2 +1,67 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<body>
+<nav class="navbar">
+  <a href="www.grrunch.com" class="navbar__logo">
+    <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733093390/grrunch-logo-text_yceq4n.svg"
+         width="80%"
+         alt="Grrunch Logo">
+  </a>
+
+  <ul class="navbar__menu">
+    <li class="navbar__item">
+     <!-- <li class="navbar__item">
+      <a href="/">Home</a>
+    </li>
+    <li class="navbar__item">
+      <a href="/about">About</a>
+    </li>
+    <li class="navbar__item">
+      <a href="/contact">Contact</a>
+    </li>
+    </li> -->
+    <li class="navbar__item">
+      <button class="btn-secondary btn-secondary--dashed">My shopping list</button>
+    </li>
+     <li class="navbar__item">
+       <div class="dropdown">
+          <button class="dropdown-toggle">
+            Welcome back, Jane Doe
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">My profile</a></li>
+            <li><a href="#">My preferred stores</a></li>
+            <li><a href="#">Option 3</a></li>
+            <li><a href="#"><strong>Log out</strong></a></li>
+          </ul>
+        </div>
+    </li>
+  </ul>
+</nav>
+
+<div class="search">
+
+  <input
+    type="search"
+    class="search__input"
+    placeholder="Search food items..."
+    aria-label="Search"
+  >
+</div>
+
+<div class="container container--white">
+  <button class="btn-primary">Primary Orange</button>
+  <button class="btn-primary btn-primary--green">Primary Green</button>
+
+  <div class="dropdown">
+  <button class="dropdown-toggle">
+    Dropdown Menu
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Option 1</a></li>
+    <li><a href="#">Option 2</a></li>
+    <li><a href="#">Option 3</a></li>
+    <li><a href="#">Option 4</a></li>
+  </ul>
+</div>
+
+</div>
+</body>
