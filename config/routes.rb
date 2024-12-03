@@ -9,4 +9,16 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # "As a guest user, I want to search a product type"
+  get "/search?type=:product_type" => "products#index"
+
+  # "As a guest user, I want to select multiple stores"
+  get "/preferences" => "pages#preferences"
+
+  # "As a guest user, I want to update the stores I selected"
+  patch "/preferences" => "pages#update_preferences"
+
+  # "As a guest user, I want to view the items in my list"
+  get "/list_items" => "list_items#show"
 end
