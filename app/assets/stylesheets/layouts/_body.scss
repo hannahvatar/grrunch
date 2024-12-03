@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(127deg, #FFF 9.79%, #FFEAD4 123.21%);
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-16;
+  margin-top: $spacing-16;
+}

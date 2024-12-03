@@ -1,0 +1,39 @@
+.search {
+  display: flex;
+  margin: $spacing-32;
+  align-items: center;
+  width: calc(100% - #{$spacing-32 * 2});
+  position: relative;
+
+  &__input {
+    width: 100%;
+    padding: $spacing-12 $spacing-16;
+    padding-left: $spacing-32; // Add space for the icon
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: black;
+      box-shadow: -2px 2px 0px 0px black;
+    }
+
+    &::placeholder {
+      color: black;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: $spacing-16;
+    color: black;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+  }
+}
