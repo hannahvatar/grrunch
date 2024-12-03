@@ -1,5 +1,7 @@
-<body>
+
+
 <nav class="navbar">
+
   <a href="www.grrunch.com" class="navbar__logo">
     <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733093390/grrunch-logo-text_yceq4n.svg"
          width="80%"
@@ -8,8 +10,13 @@
 
   <ul class="navbar__menu">
     <li class="navbar__item">
-     <!-- <li class="navbar__item">
-      <a href="/">Home</a>
+
+     <div class="store-link">
+      <i data-feather="map-pin"></i>
+      <span>See selected stores</span>
+    </div>
+
+      <!-- <li class="navbar__item">
     </li>
     <li class="navbar__item">
       <a href="/about">About</a>
@@ -24,13 +31,15 @@
      <li class="navbar__item">
        <div class="dropdown">
           <button class="dropdown-toggle">
-            Welcome back, Jane Doe
-          </button>
+          Welcome back, Jane Doe
+          <i data-feather="chevron-down"></i>
+        </button>
           <ul class="dropdown-menu">
             <li><a href="#">My profile</a></li>
             <li><a href="#">My preferred stores</a></li>
             <li><a href="#">Option 3</a></li>
             <li><a href="#"><strong>Log out</strong></a></li>
+
           </ul>
         </div>
     </li>
@@ -38,13 +47,15 @@
 </nav>
 
 <div class="search">
-
+ <i data-feather="search" class="search__icon"></i>
   <input
     type="search"
     class="search__input"
     placeholder="Search food items..."
     aria-label="Search"
+
   >
+
 </div>
 
 <div class="container container--white">
@@ -54,6 +65,7 @@
   <div class="dropdown">
   <button class="dropdown-toggle">
     Dropdown Menu
+     <i data-feather="chevron-down"></i>
   </button>
   <ul class="dropdown-menu">
     <li><a href="#">Option 1</a></li>
@@ -64,4 +76,3 @@
 </div>
 
 </div>
-</body>

@@ -1,1 +1,22 @@
-// Specific CSS for your home-page
+.store-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-4;
+  cursor: pointer;
+  color:black;
+  text-decoration: underline;
+  margin: 0 $spacing-8;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    color:black;
+  }
+
+  span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+
+  }
+}
