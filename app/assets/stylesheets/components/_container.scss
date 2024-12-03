@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  margin: $spacing-32;
+  padding: $spacing-32;
+  border-radius: $spacing-24;
+  border: 1px solid black;
+  box-shadow: -2px 2px 0px 0px black;
+
+
+  // Default (White)
+   &--white {
+      background-color: white;
+   }
+}
