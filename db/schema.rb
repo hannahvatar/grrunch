@@ -10,9 +10,53 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_12_03_170537) do
+ActiveRecord::Schema[7.1].define(version: 2024_12_03_194400) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "lists", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_lists_on_user_id"
+  end
+
+  create_table "product_prices", force: :cascade do |t|
+    t.float "price"
+    t.date "scraping_date"
+    t.bigint "product_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_product_prices_on_product_id"
+  end
+
+  create_table "product_stores", force: :cascade do |t|
+    t.bigint "product_id", null: false
+    t.bigint "store_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_product_stores_on_product_id"
+    t.index ["store_id"], name: "index_product_stores_on_store_id"
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.string "brand"
+    t.float "weight"
+    t.bigint "list_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["list_id"], name: "index_products_on_list_id"
+  end
+
+  create_table "stores", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "email"
+    t.string "phone_number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -26,4 +70,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_12_03_170537) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "lists", "users"
+  add_foreign_key "product_prices", "products"
+  add_foreign_key "product_stores", "products"
+  add_foreign_key "product_stores", "stores"
+  add_foreign_key "products", "lists"
 end
