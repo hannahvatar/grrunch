@@ -3,4 +3,10 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def preferences
+  end
+
+  def update_preferences
+  end
 end
