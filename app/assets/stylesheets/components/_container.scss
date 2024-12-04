@@ -1,6 +1,17 @@
+
 .container {
   display: flex;
+  flex-direction: column;
   margin: $spacing-32;
+}
+
+.container-hrz {
+  display: flex;
+
+}
+
+.container-main {
+  display: flex;
   padding: $spacing-32;
   border-radius: $spacing-24;
   border: 1px solid black;

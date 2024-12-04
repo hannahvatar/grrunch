@@ -1,5 +1,5 @@
 
-
+<!-- Navbar -->
 <nav class="navbar">
 
   <a href="www.grrunch.com" class="navbar__logo">
@@ -11,41 +11,26 @@
   <ul class="navbar__menu">
     <li class="navbar__item">
 
-     <div class="store-link">
-      <i data-feather="map-pin"></i>
-      <span>See selected stores</span>
-    </div>
+      <div class="store-link">
+        <i data-feather="map-pin"></i>
+        <span>See selected stores</span>
+      </div>
 
-      <!-- <li class="navbar__item">
-    </li>
-    <li class="navbar__item">
-      <a href="/about">About</a>
-    </li>
-    <li class="navbar__item">
-      <a href="/contact">Contact</a>
-    </li>
-    </li> -->
-    <li class="navbar__item">
-      <button class="btn-secondary btn-secondary--dashed">My shopping list</button>
-    </li>
-     <li class="navbar__item">
-       <div class="dropdown">
-          <button class="dropdown-toggle">
-          Welcome back, Jane Doe
-          <i data-feather="chevron-down"></i>
-        </button>
-          <ul class="dropdown-menu">
-            <li><a href="#">My profile</a></li>
-            <li><a href="#">My preferred stores</a></li>
-            <li><a href="#">Option 3</a></li>
-            <li><a href="#"><strong>Log out</strong></a></li>
+      <li class="navbar__item">
+        <button class="btn-secondary btn-secondary--dashed">My shopping list</button>
+      </li>
 
-          </ul>
-        </div>
+       <button class="btn-primary btn-primary--white">Sign in</button>
+       <button class="btn-primary">Sign up</button>
+
+
     </li>
   </ul>
 </nav>
 
+<!--End of Navbar -->
+<div>
+<!--Search bar -->
 <div class="search">
  <i data-feather="search" class="search__icon"></i>
   <input
@@ -58,21 +43,49 @@
 
 </div>
 
-<div class="container container--white">
-  <button class="btn-primary">Primary Orange</button>
-  <button class="btn-primary btn-primary--green">Primary Green</button>
+<!--End of Search bar -->
 
-  <div class="dropdown">
-  <button class="dropdown-toggle">
-    Dropdown Menu
-     <i data-feather="chevron-down"></i>
+<div class="container">
+  <div class="container-hrz">
+    <p>Or search within these categories</p>
+    <i data-feather="arrow-right"></i>
+  </div>
+
+    <h1>Bites Into Grocery Prices</h1>
+
+<!--Carrousel -->
+
+<div class="carousel">
+  <div class="carousel__track-container">
+    <ul class="carousel__track">
+      <li class="carousel__slide current-slide">
+        <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733344581/carrousel-01_tbu0hf.svg" class="carousel__image">
+      </li>
+      <li class="carousel__slide">
+        <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733344584/carrousel-02_q7nmko.svg" class="carousel__image">
+      </li>
+      <li class="carousel__slide">
+        <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733344582/carrousel-03_jesk6m.svg" class="carousel__image">
+      </li>
+    </ul>
+  </div>
+
+  <button class="carousel__button carousel__button--left">
+    <i data-feather="chevron-left"></i>
   </button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Option 1</a></li>
-    <li><a href="#">Option 2</a></li>
-    <li><a href="#">Option 3</a></li>
-    <li><a href="#">Option 4</a></li>
-  </ul>
+  <button class="carousel__button carousel__button--right">
+    <i data-feather="chevron-right"></i>
+  </button>
+
+  <div class="carousel__nav">
+    <button class="carousel__indicator current-slide"></button>
+    <button class="carousel__indicator"></button>
+    <button class="carousel__indicator"></button>
+  </div>
 </div>
 
+
+
+<!--End of Carrousel -->
+</div>
 </div>
