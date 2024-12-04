@@ -5,4 +5,10 @@ class Product < ApplicationRecord
   has_many :stores, through: :product_stores
 
   validates :name, :brand, :weight, presence: true
-end
+  include PgSearch::Model
+  multisearchable against: [:name, :brand]
+#   against: [ :name ],
+#   using: {
+#     tsearch: { prefix: true }
+#   }
+# end
