@@ -1,0 +1,129 @@
+.product-card-hrz {
+  display: flex;
+  width: 436px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  // Bloc-01
+  &__bloc-01 {
+    display: flex;
+    height: 68px;
+    padding: 16px 16px 8px 16px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: $spacing-16 16px 0px 0px;
+    background: $green-100;
+
+    &__col-left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__col-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    h6 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: black;
+      margin: 0;
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: black;
+      margin: 0;
+    }
+
+    .price-title {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      color: black;
+      margin: 0;
+    }
+
+    .price-weight {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: black;
+      margin: 0;
+    }
+  }
+
+  // Bloc-02
+  &__bloc-02 {
+    display: flex;
+    padding: $spacing-16;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 0px 0px $spacing-16 $spacing-16;
+    background: white;
+
+    .section-01 {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      align-self: stretch;
+      flex-direction: row; // Explicitly set flex direction
+      width: 100%; // Ensure full width
+    }
+
+    &__container-left {
+      display: flex;
+      width: 106px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      flex-shrink: 0; // Prevent container from shrinking
+    }
+
+    &__container-right {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 10px;
+      flex: 1; // This will make it take remaining space
+      min-width: 0; // Prevent grid overflow
+    }
+
+      .section-02 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+      }
+
+
+      .status-dot-highest,
+      .status-dot-lowest,
+      .status-dot-avg {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-top: 4px;
+
+        &.status-dot-highest {
+          background-color: #FF0000;
+        }
+
+        &.status-dot-lowest {
+          background-color: #9646FF;
+        }
+
+        &.status-dot-avg {
+          background-color: #FFD200;
+        }
+      }
+    }
+  }
