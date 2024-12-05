@@ -29,30 +29,7 @@
     object-fit: contain; // Adjust to fit your design needs
   }
 
-  &__button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1;
 
-    svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    &--left {
-      left: 20px;
-    }
-
-    &--right {
-      right: 20px;
-    }
-  }
 
   &__nav {
     display: flex;
@@ -64,13 +41,16 @@
   &__indicator {
     border: 0;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background: rgba(0, 0, 0, 0.3);
+    width: 12px;
+    height: 12px;
+    background: white;  // Change this line
+    //border: 2px solid black;  // Add a border to make it visible
     cursor: pointer;
+    padding: 0;
+    margin: 0;
 
     &.current-slide {
-      background: rgba(0, 0, 0, 0.75);
+      background: black;
     }
   }
 }
