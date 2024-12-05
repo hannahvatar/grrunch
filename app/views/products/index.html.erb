@@ -20,6 +20,7 @@
         <% if @products.any? %>
           <% @products.each do |product| %>
             <h4><%= product.name %></h4>
+            <p><%= product.product_name %></p>
             <p><%= product.brand %></p>
           <% end %>
         <% else %>
