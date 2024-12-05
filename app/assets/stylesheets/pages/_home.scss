@@ -1,22 +1,14 @@
-.store-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: $spacing-4;
-  cursor: pointer;
-  color:black;
-  text-decoration: underline;
-  margin: 0 $spacing-8;
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
 
-  svg {
-    width: 24px;
-    height: 24px;
-    color:black;
-  }
+}
 
-  span {
+p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     font-weight: 600;
-
-  }
+    margin: 0;
 }
