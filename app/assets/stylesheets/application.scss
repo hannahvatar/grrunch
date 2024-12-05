@@ -12,9 +12,11 @@
 @import "components/container";
 @import "components/product_table";
 @import "components/carousel";
+@import "components/product_card";
 
 // Layouts
 @import "layouts/body";
 
-// PAges
+// Pages
 @import "pages/home";
+@import "pages/index";
