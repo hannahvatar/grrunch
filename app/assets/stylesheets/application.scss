@@ -2,7 +2,7 @@
 @import "abstract/variables";
 
 // First import variables
-@import "abstract/variables";
+// @import "abstract/variables";
 
 // Then import components
 @import "components/navbar";
@@ -10,6 +10,7 @@
 @import "components/buttons";
 @import "components/dropdown";
 @import "components/container";
+@import "components/product_table";
 
 // Layouts
 @import "layouts/body";
