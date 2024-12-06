@@ -10,12 +10,12 @@
 
 require 'json'
 
-User.destroy_all
+# User.destroy_all
 Store.destroy_all
 Product.destroy_all
 ProductStore.destroy_all
 ProductPrice.destroy_all
-List.destroy_all
+# List.destroy_all
 
 file_path_cookies = Rails.root.join('db', 'data', 'Chocolate_chips_cookies.json')
 file_path_beef = Rails.root.join('db', 'data', "Ground_Beef.json")
@@ -45,13 +45,13 @@ products = JSON.parse(file_content_water)
 data6 = products["Water"]
 data_list = [data1, data2, data3, data4, data5, data6]
 
-puts "Creating user..."
-user1 = User.create!(email: "test@email.com", password: "123456")
-puts "User created!"
+# puts "Creating user..."
+# user1 = User.create!(email: "test@email.com", password: "123456")
+# puts "User created!"
 
-puts "Creating list..."
-list1 = List.create!(user: user1)
-puts "List created!"
+# puts "Creating list..."
+# list1 = List.create!(user: user1)
+# puts "List created!"
 
 puts "Creating store..."
 Store.create!(name: "Provigo")
@@ -60,7 +60,8 @@ puts "Store created."
 puts "Creating products..."
 data_list.each do |data|
   data.each do |product|
-    Product.create!(name: product["product_name"], brand: product["brand"], weight: 300.50, list: list1)
+    data_product = Product.create!(name: product["product_name"], brand: product["brand"], weight: product["weight"])
+    ProductPrice.create!(price: product["price"], product: data_product)
   end
 end
 # data1.each do |product|
