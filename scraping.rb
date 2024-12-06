@@ -1,6 +1,5 @@
 require 'selenium-webdriver'
 require 'nokogiri'
-require 'httparty'
 require "json"
 
 options = Selenium::WebDriver::Chrome::Options.new
