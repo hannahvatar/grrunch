@@ -1,0 +1,53 @@
+{
+  "Strawberries":[
+    {
+      "product_name": "Ontario Greenhouse-Grown Strawberries",
+      "brand": "President's Choice",
+      "price": "$5.49",
+      "weight": "340 g",
+      "price_per_100_unit": "$1.61/100g"
+    },
+    {
+      "product_name": "Gluten Free Strawberry Cake",
+      "brand": "President's Choice",
+      "price": "$9.99",
+      "weight": "553 g",
+      "price_per_100_unit": "$1.81/100g"
+    },
+    {
+      "product_name": "Frozen Yogurt Saucy Spots Strawberry",
+      "brand": "Chapmans",
+      "price": "$6.99",
+      "weight": "2 l",
+      "price_per_100_unit": "$0.35/100ml"
+    },
+    {
+      "product_name": "Strawberry Banana Wafers",
+      "brand": "Voortman",
+      "price": "$2.79",
+      "weight": "300 g",
+      "price_per_100_unit": "$0.93/100g"
+    },
+    {
+      "product_name": "Strawberry Nutritional Supplement",
+      "brand": "Pediasure",
+      "price": "sale$10.00 MIN 2",
+      "weight": "4x235.0 ml",
+      "price_per_100_unit": "$1.38/100ml"
+    },
+    {
+      "product_name": "Chia Jam, Strawberry",
+      "brand": "Healthy Crunch",
+      "price": "$9.99",
+      "weight": "250 ml",
+      "price_per_100_unit": "$4.00/100ml"
+    },
+    {
+      "product_name": "Strawberry Frappé Ultra Shake Complete Meal Replacement",
+      "brand": "President's Choice",
+      "price": "$10.99",
+      "weight": "6x237.0 ml",
+      "price_per_100_unit": "$0.77/100ml"
+    }
+  ]
+}
