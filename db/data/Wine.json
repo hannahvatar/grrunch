@@ -1,0 +1,81 @@
+{
+  "Wine": [
+    {
+      "product_name": "Light White Wine (ID required at pick-up)",
+      "brand": "Au Quotidien",
+      "price": "$10.49",
+      "weight": "1 l",
+      "price_per_100_unit": "$1.05/100ml"
+    },
+    {
+      "product_name": "Australian White Wine (ID required at pick-up)",
+      "brand": "Arte Nova",
+      "price": "$12.09",
+      "weight": "1 l",
+      "price_per_100_unit": "$1.21/100ml"
+    },
+    {
+      "product_name": "Sweet and Fruity White Wine (ID required at pick-up)",
+      "brand": "Au Quotidien",
+      "price": "$10.49",
+      "weight": "1 l",
+      "price_per_100_unit": "$1.05/100ml"
+    },
+    {
+      "product_name": "Torrao White Wine (ID required at pick-up)",
+      "brand": "Torrao Espana",
+      "price": "$12.49",
+      "weight": "1 l",
+      "price_per_100_unit": "$1.25/100ml"
+    },
+    {
+      "product_name": "Oakyard Selection Canadian Red Wine (ID required at pick-up)",
+      "brand": "Double Vie",
+      "price": "$12.99",
+      "weight": "1000 ml",
+      "price_per_100_unit": "$1.30/100ml"
+    },
+    {
+      "product_name": "Sparkling Wine (ID required at pick-up)",
+      "brand": "Le Foret Noire",
+      "price": "$12.79",
+      "weight": "750 ml",
+      "price_per_100_unit": "$1.71/100ml"
+    },
+    {
+      "product_name": "Svelte Red Wine (ID required at pick-up)",
+      "brand": "Svelte",
+      "price": "$13.19",
+      "weight": "750 ml",
+      "price_per_100_unit": "$1.76/100ml"
+    },
+    {
+      "product_name": "Pinot Grigio White Wine (ID required at pick-up)",
+      "brand": "Revolution",
+      "price": "$11.19",
+      "weight": "750 ml",
+      "price_per_100_unit": "$1.49/100ml"
+    },
+    {
+      "product_name": "Christophe Dalbray White Wine (ID required at pick-up)",
+      "brand": "Christophe Dalbray",
+      "price": "$9.19",
+      "weight": "750 ml",
+      "price_per_100_unit": "$1.23/100ml"
+    },
+    {
+      "product_name": "Red Wine Cabernet Merlot (ID required at pick-up)",
+      "brand": "Smoky Bay",
+      "price": "$44.79",
+      "weight": "4000 ml",
+      "price_per_100_unit": "$1.12/100ml"
+    },
+    {
+      "product_name": "Christophe Dalbray Red Wine (ID required at pick-up)",
+      "brand": "Christophe Dalbray",
+      "price": "$38.49",
+      "weight": "4 l",
+      "price_per_100_unit": "$0.96/100ml"
+    }
+  ]
+}
