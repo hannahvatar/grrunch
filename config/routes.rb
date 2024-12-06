@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   # "As a guest user, I want to search a product type"
-  get "/search?type=:product_type" => "products#index"
-
+  # get "/products" => "products#index"
+  resources :products, only:[:index]
   # "As a guest user, I want to select multiple stores"
   get "/preferences" => "pages#preferences"
 
@@ -20,5 +20,5 @@ Rails.application.routes.draw do
   patch "/preferences" => "pages#update_preferences"
 
   # "As a guest user, I want to view the items in my list"
-  get "/list_items" => "list_items#show"
+  get "/list_items" => "list_items#index"
 end

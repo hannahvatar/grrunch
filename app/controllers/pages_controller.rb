@@ -1,7 +1,11 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home ]
+  # before_action :authenticate_user!, only: [:home]
 
   def home
+    @products = []
+    if params[:query].present?
+      @products = Product.search_by_name_and_brand(params[:query])
+    end
   end
 
   def preferences

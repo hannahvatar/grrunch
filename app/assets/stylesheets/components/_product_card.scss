@@ -1,0 +1,177 @@
+.product-card {
+display: flex;
+width: 316px;
+flex-direction: column;
+align-items: flex-end;
+gap: 8px;
+border-radius: 32px;
+background: white;
+box-shadow: -2px 2px 0px 0px $purple-600;
+
+  // Bloc-01
+  &__bloc-01 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+
+  &__col-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__col-right {
+    display: flex;
+    gap: 4px;
+  }
+  }
+    // Bloc-02
+    &__bloc-02 {
+      display: flex;
+      padding-left: 20px;
+      align-items: flex-start;
+      gap: 20px;
+      align-self: stretch;
+
+    &__col-left {
+      display: flex;
+
+
+    }
+
+    &__col-right {
+      display: flex;
+      height: 44px;
+      padding: 12px 20px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      flex: 1 0 0;
+      background-color: $purple-100;
+    }
+
+  }
+    // Bloc-03
+  &__bloc-03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+  }
+
+      // Bloc-04
+    &__bloc-04 {
+      display: flex;
+      padding: 16px 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      align-self: stretch;
+
+      .row-01 {
+        display: flex;
+        align-items: flex-start;
+        gap: 4px;
+        align-self: stretch;
+
+        &-left {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4px;
+          flex: 1 0 0;
+        }
+
+        &-right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4px;
+          flex: 1 0 0;
+        }
+      }
+
+      .row-02 {
+        display: flex;
+        align-items: flex-start;
+        gap: 4px;
+
+        &-left {
+          display: flex;
+          align-items: flex-start;
+          gap: 4px;
+          flex: 1 0 0;
+        }
+
+      }
+    }
+
+      // Bloc-05
+    &__bloc-05 {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+      margin-right: 20px;
+
+    }
+    h6 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: black;
+      margin:0;
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: black;
+      margin:0;
+    }
+
+    .price-title {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      color: black;
+      margin:0;
+    }
+
+    .price-weight {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color: black;
+      margin:0;
+
+    }
+
+    .status-dot-highest {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #FF0000;
+      margin-top: 4px;
+    }
+
+    .status-dot-lowest {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #9646FF;
+      margin-top: 4px;
+    }
+
+    .status-dot-avg {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #FFD200;
+      margin-top: 4px;
+    }
+
+  }
