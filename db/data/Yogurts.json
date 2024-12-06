@@ -1,0 +1,88 @@
+{
+  "yogurts": [
+    {
+      "product_name": "Greek Raspberry Yogurt",
+      "brand": "Liberte",
+      "price": "$6.99",
+      "weight": "650 g",
+      "price_per_100_unit": "$1.08/100g"
+    },
+    {
+      "product_name": "Méditerranée 9% Yogurt, Mocha",
+      "brand": "Liberte",
+      "price": "sale$4.25 MIN 2",
+      "weight": "500 g",
+      "price_per_100_unit": "$1.06/100g"
+    },
+    {
+      "product_name": "Méditerranée 9% Yogurt, Strawberry",
+      "brand": "Liberte",
+      "price": "sale$4.25 MIN 2",
+      "weight": "500 g",
+      "price_per_100_unit": "$1.06/100g"
+    },
+    {
+      "product_name": "Méditerranée Plain 10% MF Yogurt Limited Edition",
+      "brand": "Liberte",
+      "price": "sale$4.25 MIN 2",
+      "weight": "500 g",
+      "price_per_100_unit": "$1.06/100g"
+    },
+    {
+      "product_name": "Greek 0% Yogurt 4-Pack, Strawberry, High Protein and Probiotics",
+      "brand": "Liberte",
+      "price": "$5.29",
+      "weight": "4x100.0 g",
+      "price_per_100_unit": "$1.32/100g"
+    },
+    {
+      "product_name": "Original Yogurt Cherry,Balkan Style 3.25%",
+      "brand": "Astro",
+      "price": "$4.29",
+      "weight": "650 g",
+      "price_per_100_unit": "$0.66/100g"
+    },
+    {
+      "product_name": "Original Yogurt Cappuccino, Balkan Style 6%",
+      "brand": "Astro",
+      "price": "$4.29",
+      "weight": "650 g",
+      "price_per_100_unit": "$0.66/100g"
+    },
+    {
+      "product_name": "Greek 5% Extra Creamy Yogurt, Vanilla Bean, High Protein",
+      "brand": "Liberte",
+      "price": "$6.99",
+      "weight": "650 g",
+      "price_per_100_unit": "$1.08/100g"
+    },
+    {
+      "product_name": "Original Yogurt Lemon Balkan Style 3.25%",
+      "brand": "Astro",
+      "price": "$4.29",
+      "weight": "650 g",
+      "price_per_100_unit": "$0.66/100g"
+    },
+    {
+      "product_name": "Frozen Yogurt Field Berry",
+      "brand": "President's Choice",
+      "price": "$5.49",
+      "weight": "2 l",
+      "price_per_100_unit": "$0.27/100ml"
+    },
+    {
+      "product_name": "Original Yogurt Banana, Balkan Style 3.25%",
+      "brand": "Astro",
+      "price": "$4.29",
+      "weight": "650 g",
+      "price_per_100_unit": "$0.66/100g"
+    },
+    {
+      "product_name": "Halal Yogurt 3% Plain",
+      "brand": "Khaas",
+      "price": "$3.29",
+      "weight": "750 g",
+      "price_per_100_unit": "$0.44/100g"
+    }
+  ]
+}
