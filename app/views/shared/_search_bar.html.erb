@@ -1,0 +1,11 @@
+<div class="search">
+ <i data-feather="search" class="search__icon"></i>
+
+  <%= form_with url: products_path, method: :get do %>
+        <%= text_field_tag :query,
+              params[:query],
+              class: "search__input",
+              placeholder: "Search food items..."
+          %>
+      <% end %>
+</div>
