@@ -3,11 +3,14 @@
   width: 436px;
   flex-direction: column;
   align-items: flex-start;
+  border-radius: 32px;
+  box-shadow: -2px 2px 0px 0px $green-500;
+  background: white;
 
   // Bloc-01
   &__bloc-01 {
     display: flex;
-    height: 68px;
+    height: 48px;
     padding: 16px 16px 8px 16px;
     justify-content: space-between;
     align-items: flex-start;
@@ -26,38 +29,6 @@
       flex-direction: column;
       align-items: flex-end;
     }
-
-    h6 {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
-      font-size: 16px;
-      color: black;
-      margin: 0;
-    }
-
-    p {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-size: 12px;
-      color: black;
-      margin: 0;
-    }
-
-    .price-title {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 800;
-      font-size: 12px;
-      color: black;
-      margin: 0;
-    }
-
-    .price-weight {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-size: 12px;
-      color: black;
-      margin: 0;
-    }
   }
 
   // Bloc-02
@@ -65,18 +36,15 @@
     display: flex;
     padding: $spacing-16;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     align-self: stretch;
-    border-radius: 0px 0px $spacing-16 $spacing-16;
-    background: white;
 
     .section-01 {
       display: flex;
       align-items: flex-start;
-      gap: 20px;
+      gap: $spacing-8;
       align-self: stretch;
-      flex-direction: row; // Explicitly set flex direction
-      width: 100%; // Ensure full width
+      width: 100%;
     }
 
     &__container-left {
@@ -85,45 +53,112 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
-      flex-shrink: 0; // Prevent container from shrinking
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
 
     &__container-right {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, auto);
-      gap: 10px;
-      flex: 1; // This will make it take remaining space
-      min-width: 0; // Prevent grid overflow
-    }
+      display: flex;
+      gap: $spacing-20;
+      flex: 1;
+      padding-left: $spacing-20;
 
-      .section-02 {
+      .price-column {
+        flex: 1;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-self: stretch;
+        flex-direction: column;
+        gap: $spacing-8;
       }
 
+      .price-item {
+        display: flex;
+        align-items: flex-start;
+        gap: $spacing-8;
+      }
 
-      .status-dot-highest,
-      .status-dot-lowest,
-      .status-dot-avg {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        margin-top: 4px;
-
-        &.status-dot-highest {
-          background-color: #FF0000;
-        }
-
-        &.status-dot-lowest {
-          background-color: #9646FF;
-        }
-
-        &.status-dot-avg {
-          background-color: #FFD200;
-        }
+      .price-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
       }
     }
   }
+
+  // Bloc-03
+  &__bloc-03 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $spacing-20 $spacing-20 $spacing-20;
+    align-self: stretch;
+  }
+
+  // Typography
+  h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    margin: 0;
+  }
+
+  .price-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    color: black;
+    margin: 0;
+  }
+
+  .price-weight {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+    margin: 0;
+  }
+
+  // Status dots
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 4px;
+
+    &-highest {
+      background-color: #FF0000;
+    }
+
+    &-lowest {
+      background-color: #9646FF;
+    }
+
+    &-avg {
+      background-color: #FFD200;
+    }
+  }
+
+  // Location and Action
+  .location {
+    display: flex;
+    align-items: center;
+    gap: $spacing-4;
+  }
+
+  .action {
+    display: flex;
+    align-items: center;
+    gap: $spacing-8;
+  }
+
+  // Links and buttons styles would be defined in a separate common styles file
+  .link {
+    cursor: pointer;
+    color: black;
+  }
+}
