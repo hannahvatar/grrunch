@@ -1,6 +1,6 @@
 .product-table {
   width: 100%;
-  max-width: 1000px;
+  height: 100%;
   margin: 0 auto;
   background-color: white;
   border-radius: 8px;
@@ -15,12 +15,17 @@
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #E0E0E0;
+  text-transform: capitalize;
  }
+
+.small-icon {
+  font-size: 50%;
+}
+
  .product-table th {
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: bolder;
   font-size: 0.9em;
-  color: #666;
+  color: #000000;
  }
  .product-table tbody tr {
   border-bottom: 1px solid #E0E0E0;
@@ -33,4 +38,8 @@
  }
  .product-table tr:last-child td:last-child {
   border-bottom-right-radius: 8px;
+ }
+
+ thead tr{
+  border-bottom: #FFEAD4 4px solid;
  }
