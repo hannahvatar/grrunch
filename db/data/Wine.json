@@ -1,81 +1,76 @@
 {
   "Wine": [
     {
-      "product_name": "Light White Wine (ID required at pick-up)",
-      "brand": "Au Quotidien",
-      "price": "$10.49",
-      "weight": "1 l",
-      "price_per_100_unit": "$1.05/100ml"
-    },
-    {
-      "product_name": "Australian White Wine (ID required at pick-up)",
-      "brand": "Arte Nova",
-      "price": "$12.09",
-      "weight": "1 l",
-      "price_per_100_unit": "$1.21/100ml"
-    },
-    {
-      "product_name": "Sweet and Fruity White Wine (ID required at pick-up)",
-      "brand": "Au Quotidien",
-      "price": "$10.49",
-      "weight": "1 l",
-      "price_per_100_unit": "$1.05/100ml"
-    },
-    {
-      "product_name": "Torrao White Wine (ID required at pick-up)",
-      "brand": "Torrao Espana",
-      "price": "$12.49",
-      "weight": "1 l",
-      "price_per_100_unit": "$1.25/100ml"
-    },
-    {
-      "product_name": "Oakyard Selection Canadian Red Wine (ID required at pick-up)",
-      "brand": "Double Vie",
-      "price": "$12.99",
-      "weight": "1000 ml",
-      "price_per_100_unit": "$1.30/100ml"
-    },
-    {
-      "product_name": "Sparkling Wine (ID required at pick-up)",
-      "brand": "Le Foret Noire",
-      "price": "$12.79",
+      "product_name": "Chardonnay Dealcoholized Wine",
+      "brand": "President's Choice",
+      "price": "sale$7.50",
       "weight": "750 ml",
-      "price_per_100_unit": "$1.71/100ml"
+      "price_per_100_unit": "$1.00/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21045800/b3/en/front/21045800_front_a06_@2.png"
     },
     {
-      "product_name": "Svelte Red Wine (ID required at pick-up)",
-      "brand": "Svelte",
-      "price": "$13.19",
+      "product_name": "Merlot Dealcoholized Wine",
+      "brand": "President's Choice",
+      "price": "sale$7.50",
       "weight": "750 ml",
-      "price_per_100_unit": "$1.76/100ml"
+      "price_per_100_unit": "$1.00/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21045602/b3/en/front/21045602_front_a06_@2.png"
     },
     {
-      "product_name": "Pinot Grigio White Wine (ID required at pick-up)",
-      "brand": "Revolution",
-      "price": "$11.19",
+      "product_name": "Sparkling Dealcoholized Wine",
+      "brand": "President's Choice",
+      "price": "sale$7.50",
       "weight": "750 ml",
-      "price_per_100_unit": "$1.49/100ml"
+      "price_per_100_unit": "$1.00/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21045604/b3/en/front/21045604_front_a06_@2.png"
     },
     {
-      "product_name": "Christophe Dalbray White Wine (ID required at pick-up)",
-      "brand": "Christophe Dalbray",
-      "price": "$9.19",
+      "product_name": "Dealcoholized Mulled Wine With Natural Flavour",
+      "brand": "President's Choice",
+      "price": "$7.50",
       "weight": "750 ml",
-      "price_per_100_unit": "$1.23/100ml"
+      "price_per_100_unit": "$1.00/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21480518/b3/en/front/21480518_front_a06_@2.png"
     },
     {
-      "product_name": "Red Wine Cabernet Merlot (ID required at pick-up)",
-      "brand": "Smoky Bay",
-      "price": "$44.79",
-      "weight": "4000 ml",
-      "price_per_100_unit": "$1.12/100ml"
+      "product_name": "White Wine Sauvignon Blanc (ID required at pick-up)",
+      "brand": "KEEP CALM",
+      "price": "sale$10.99",
+      "weight": "750 ml",
+      "price_per_100_unit": "$1.47/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21104604/b3/en/front/21104604_front_a06_@2.png"
     },
     {
-      "product_name": "Christophe Dalbray Red Wine (ID required at pick-up)",
-      "brand": "Christophe Dalbray",
-      "price": "$38.49",
+      "product_name": "Wallaroo Trail BIN 212 Shiraz Red Wine 4L (ID required at pick-up)",
+      "brand": "Wallaroo Trail",
+      "price": "$49.99",
       "weight": "4 l",
-      "price_per_100_unit": "$0.96/100ml"
+      "price_per_100_unit": "$1.25/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20073774/b3/en/front/20073774_front_a06_@2.png"
+    },
+    {
+      "product_name": "Wine Sauerkraut",
+      "brand": "No Name",
+      "price": "$6.99",
+      "weight": "1 l",
+      "price_per_100_unit": "$0.70/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20130996/b3/en/front/20130996_front_a06_@2.png"
+    },
+    {
+      "product_name": "White Wine Pinot Grigio (ID required at pick-up)",
+      "brand": "Smoky Bay",
+      "price": "sale$12.99",
+      "weight": "12x1000.0 ml",
+      "price_per_100_unit": "$1.30/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21405385/b3/en/front/21405385_front_a06_@2.png"
+    },
+    {
+      "product_name": "Canadian Red Wine (ID required at pick-up)",
+      "brand": "Aroma Mi Amore",
+      "price": "sale$12.49",
+      "weight": "1000 ml",
+      "price_per_100_unit": "$1.25/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21019105/b3/en/front/21019105_front_a06_@2.png"
     }
   ]
 }

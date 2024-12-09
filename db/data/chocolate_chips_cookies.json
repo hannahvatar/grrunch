@@ -1,0 +1,76 @@
+{
+  "ChocolateChipsCookies": [
+    {
+      "product_name": "Chocolate Chunks Cookies",
+      "brand": "Sara Lee",
+      "price": "$4.19",
+      "weight": "300 g",
+      "price_per_100_unit": "$1.40/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20015767/b3/en/front/20015767_front_a06_@2.png"
+    },
+    {
+      "product_name": "Dark Chocolate Crêpes",
+      "brand": "President's Choice",
+      "price": "$3.49",
+      "weight": "100 g",
+      "price_per_100_unit": "$3.49/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21030510/b3/en/front/21030510_front_a06_@2.png"
+    },
+    {
+      "product_name": "Milk Chocolate Crêpes",
+      "brand": "President's Choice",
+      "price": "$3.49",
+      "weight": "100 g",
+      "price_per_100_unit": "$3.49/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21030511/b3/en/front/21030511_front_a06_@2.png"
+    },
+    {
+      "product_name": "KinniTOOS, Chocolate Sandwich Crème",
+      "brand": "Kinnikinnick",
+      "price": "$4.99",
+      "weight": "220 g",
+      "price_per_100_unit": "$2.27/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20085653001/b3/en/front/20085653001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Chocolate & Caramel Wafers",
+      "brand": "Voortman",
+      "price": "$2.79",
+      "weight": "300 g",
+      "price_per_100_unit": "$0.93/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21095459/b3/en/front/21095459_front_a06_@2.png"
+    },
+    {
+      "product_name": "Peanut Butter Chocolate Chip Cookie Dough",
+      "brand": "LoveGoodFats",
+      "price": "$29.99",
+      "weight": "12x39.0 g",
+      "price_per_100_unit": "$6.41/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21125123/b3/en/front/21125123_front_a06_@2.png"
+    },
+    {
+      "product_name": "Chocolate Chip Cookie Dough Plant-Based",
+      "brand": "LoveGoodFats",
+      "price": "$2.99",
+      "weight": "39 g",
+      "price_per_100_unit": "$7.67/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21125123/b3/en/front/21125123_front_a06_@2.png"
+    },
+    {
+      "product_name": "Dark Chocolate Covered Digestive Biscuits",
+      "brand": "President's Choice",
+      "price": "$2.99",
+      "weight": "300 g",
+      "price_per_100_unit": "$1.00/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20325376002/b3/en/front/20325376002_front_a06_@2.png"
+    },
+    {
+      "product_name": "Morning! Muffin, Chocolate Chunks",
+      "brand": "Vachon",
+      "price": "$4.39",
+      "weight": "50 g",
+      "price_per_100_unit": "$1.76/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20787264/b3/en/front/20787264_front_a06_@2.png"
+    }
+  ]
+}

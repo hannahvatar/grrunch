@@ -2,24 +2,25 @@ require 'selenium-webdriver'
 require 'nokogiri'
 require "json"
 
-options = Selenium::WebDriver::Chrome::Options.new
-options.add_argument('--headless')  # Run in headless mode (no UI). This allows the browser to run in the background without opening a visible window
+# options = Selenium::WebDriver::Chrome::Options.new
+# options.add_argument('--headless')  # Run in headless mode (no UI). This allows the browser to run in the background without opening a visible window
 
 # Initialize the WebDriver for Chrome with the specified options
-driver = Selenium::WebDriver.for :chrome, options: options
+# driver = Selenium::WebDriver.for :chrome, options: options
 
 # Navigate to the specified URL
 # url = 'https://www.scrapingcourse.com/javascript-rendering'
-url = "https://www.provigo.ca/en/search?search-bar=Water"
+# url = "https://www.provigo.ca/en/search?search-bar=Chocolate%20chips%20cookies"
+# water, wine, yogurt, strawberries, ground_beef, chocolate_chips_cookies
 
-driver.get(url)
+# driver.get(url)
 
 # Wait for the page to fully load
-sleep 20
+# sleep 20
 
 # Get the page source
 
-html = driver.page_source
+# html = driver.page_source
 # doc = Nokogiri::HTML(html)
 
 # file_path = 'strawberries.html'
@@ -46,7 +47,7 @@ def scrape_product_details(html)
       next if sponsored == "Sponsored"
 
       product_name = item.at_css("[data-testid='product-title']")&.text&.strip
-
+      img_url = item.at_css('div[data-testid="product-image"] img')&.[]('src')
       brand = item.at_css("[data-testid='product-brand']")&.text&.strip
 
       regular_price = item.at_css("[data-testid='regular-price']")&.text&.strip
@@ -74,21 +75,23 @@ def scrape_product_details(html)
         weight = weight_match[1] if weight_match
         price_per_100_unit = price_match[0] if price_match
       end
-      next if product_name.nil? || brand.nil? || price.nil? || weight.nil?
+      next if product_name.nil? || brand.nil? || price.nil? || weight.nil? || img_url.nil?
 
       hash = {
         product_name:,
         brand:,
         price:,
         weight:,
-        price_per_100_unit:
+        price_per_100_unit:,
+        img_url:
       }
       @products << hash
       puts "Product name: #{product_name}"
       puts "Brand: #{brand}"
       puts "Price: #{price}"
       puts "Weight: #{weight}"
-      puts "Price per 100g: #{price_per_100_unit}"
+      puts "Price per 100unit: #{price_per_100_unit}"
+      puts "image_URL: #{img_url}"
       puts "------------------"
       @counter += 1
     end
@@ -109,14 +112,14 @@ def scrape_product_details(html)
 end
 
 # Load the content of the saved HTML file
-# html_content = File.read('scraping_course.html')
+# html_content = File.read('water.html')
 
-scrape_product_details(html)
+# scrape_product_details(html)
 
-json_output = { Water: @products }
-File.open("Water.json", "wb") do |file|
-  file.write(JSON.generate(json_output))
-end
+# json_output = { ChocolateChipsCookies: @products }
+# File.open("chocolate_chips_cookies.json", "wb") do |file|
+#   file.write(JSON.generate(json_output))
+# end
 
 puts "---------------------"
 puts "Total items scraped: #{@counter}"
