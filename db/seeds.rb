@@ -11,17 +11,17 @@
 require 'json'
 
 # User.destroy_all
-Store.destroy_all
-Product.destroy_all
 ProductStore.destroy_all
 ProductPrice.destroy_all
+Store.destroy_all
+Product.destroy_all
 # List.destroy_all
 
-file_path_cookies = Rails.root.join('db', 'data', 'Chocolate_chips_cookies.json')
-file_path_beef = Rails.root.join('db', 'data', "Ground_Beef.json")
+file_path_cookies = Rails.root.join('db', 'data', 'chocolate_chips_cookies.json')
+file_path_beef = Rails.root.join('db', 'data', "ground_beef.json")
 file_path_strawberries = Rails.root.join('db', 'data', "Strawberries.json")
 file_path_wine = Rails.root.join('db', 'data', "Wine.json")
-file_path_yogurt = Rails.root.join('db', 'data', "Yogurts.json")
+file_path_yogurt = Rails.root.join('db', 'data', "Yogurt.json")
 file_path_water = Rails.root.join('db', 'data', "Water.json")
 
 file_content_cookies = File.read(file_path_cookies)
@@ -40,7 +40,7 @@ data3 = products["Strawberries"]
 products = JSON.parse(file_content_wine)
 data4 = products["Wine"]
 products = JSON.parse(file_content_yogurt)
-data5 = products["yogurts"]
+data5 = products["Yogurt"]
 products = JSON.parse(file_content_water)
 data6 = products["Water"]
 data_list = [data1, data2, data3, data4, data5, data6]
@@ -54,13 +54,19 @@ data_list = [data1, data2, data3, data4, data5, data6]
 # puts "List created!"
 
 puts "Creating store..."
-Store.create!(name: "Provigo")
+provigo = Store.create!(name: "Provigo")
 puts "Store created."
 
 puts "Creating products..."
 data_list.each do |data|
   data.each do |product|
-    data_product = Product.create!(name: product["product_name"], brand: product["brand"], weight: product["weight"])
+    data_product = Product.create!(name: product["product_name"],
+      brand: product["brand"],
+      weight: product["weight"],
+      img_url: product["img_url"],
+      price_per_100_unit: product["price_per_100_unit"]
+    )
+    ProductStore.create!(product: data_product, store: provigo)
     ProductPrice.create!(price: product["price"], product: data_product)
   end
 end
