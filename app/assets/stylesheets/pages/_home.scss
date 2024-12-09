@@ -2,7 +2,10 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   font-weight: 900;
-  margin-bottom: $spacing-20;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 
 }
 
@@ -10,5 +13,5 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    margin: 0;
+
 }

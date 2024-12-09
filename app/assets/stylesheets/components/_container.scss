@@ -2,21 +2,70 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin: $spacing-32;
+  margin: $spacing-32 auto;
+  max-width: 80%;
+  align-items: center;
 }
 
 .container-hrz {
   display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.container-left-align {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  margin-left: 32px;;
+}
+
+.product-card-container {
+  display: flex;
+  gap: 20px;
 
 }
 
 .container-main {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: $spacing-32;
   border-radius: $spacing-24;
   border: 1px solid black;
   box-shadow: -2px 2px 0px 0px black;
   margin-bottom: $spacing-20;
+
+
+
+  .container-title {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      margin: 0px;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      gap: 8px;
+
+
+  }
+
+  .container-p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
 
 
   // Default (White)
@@ -26,8 +75,11 @@
 
   // Purple
   &--purple {
-  background-color: #FBF8FF;
-   }
+    background-color: #FBF8FF;
+    padding: $spacing-32;
+    box-sizing: border-box;
+
+  }
 
    &--green {
     background-color: #F7FDF7;
