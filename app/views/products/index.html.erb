@@ -1,13 +1,15 @@
 
 <%= render "shared/search_bar" %>
+<%= render "shared/product_table" %>
 
-  <div class="row justify-content-center">
+  <!--div class="row justify-content-center">
     <div class="col-sm-8">
       <div id="products">
         <% if @products.any? %>
           <% @products.each do |product| %>
             <h4><%= product.name %></h4>
             <p><%= product.brand %></p>
+            <button class="btn-primary">Add to List</button>
           <% end %>
         <% else %>
           <em>Sorry, no food found.</em>
@@ -15,6 +17,4 @@
       </div>
     </div>
   </div>
-</div>
-
- <%= render "shared/product_table" %>
+</div-->

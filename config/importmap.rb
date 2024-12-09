@@ -7,3 +7,6 @@ pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
 pin_all_from "app/javascript/controllers", under: "controllers"
 pin "bootstrap", to: "bootstrap.min.js", preload: true
 pin "@popperjs/core", to: "popper.js", preload: true
+pin "echarts" # @5.5.1
+pin "tslib" # @2.3.0
+pin "zrender/lib/", to: "zrender--lib--.js" # @5.6.0
