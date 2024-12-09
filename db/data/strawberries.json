@@ -25,9 +25,17 @@
       "img_url": "https://assets.shop.loblaws.ca/products/20314434002/b3/en/front/20314434002_front_a06_@2.png"
     },
     {
+      "product_name": "Chia Jam, Strawberry",
+      "brand": "Healthy Crunch",
+      "price": "$9.99",
+      "weight": "250 ml",
+      "price_per_100_unit": "$4.00/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21344679/b3/en/front/21344679_front_a06_@2.png"
+    },
+    {
       "product_name": "Strawberry Nutritional Supplement",
       "brand": "Pediasure",
-      "price": "sale$10.00 MIN 2",
+      "price": "$12.99",
       "weight": "4x235.0 ml",
       "price_per_100_unit": "$1.38/100ml",
       "img_url": "https://assets.shop.loblaws.ca/products/21371922/b3/en/front/21371922_front_a06_@2.png"
@@ -41,20 +49,12 @@
       "img_url": "https://assets.shop.loblaws.ca/products/21041987/b3/en/front/21041987_front_a06_@2.png"
     },
     {
-      "product_name": "Chia Jam, Strawberry",
-      "brand": "Healthy Crunch",
-      "price": "$9.99",
-      "weight": "250 ml",
-      "price_per_100_unit": "$4.00/100ml",
-      "img_url": "https://assets.shop.loblaws.ca/products/21344679/b3/en/front/21344679_front_a06_@2.png"
-    },
-    {
-      "product_name": "Strawberry Kiwi Juice",
-      "brand": "Dole",
-      "price": "sale$5.50 MIN 2",
-      "weight": "12x340.0 ml",
-      "price_per_100_unit": "$0.17/100ml",
-      "img_url": "https://assets.shop.loblaws.ca/products/20213242001/b3/en/front/20213242001_front_a06_@2.png"
+      "product_name": "Strawberry Frappé Ultra Shake Complete Meal Replacement",
+      "brand": "President's Choice",
+      "price": "$10.99",
+      "weight": "6x237.0 ml",
+      "price_per_100_unit": "$0.77/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20325953002/b3/en/front/20325953002_front_a06_@2.png"
     }
   ]
 }

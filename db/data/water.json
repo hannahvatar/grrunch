@@ -1,0 +1,44 @@
+{
+  "Water": [
+    {
+      "product_name": "Natural Spring Water",
+      "brand": "Pure Life",
+      "price": "$5.49",
+      "weight": "24x500.0 ml",
+      "price_per_100_unit": "$0.05/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20060696/b3/en/front/20060696_front_a06_@2.png"
+    },
+    {
+      "product_name": "Natural Spring Water",
+      "brand": "President's Choice",
+      "price": "$1.99",
+      "weight": "4 l",
+      "price_per_100_unit": "$0.05/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21185641/b3/en/front/21185641_front_a06_@2.png"
+    },
+    {
+      "product_name": "Demineralized Treated Water",
+      "brand": "AQUAFINA",
+      "price": "$9.99",
+      "weight": "24x500.0 ml",
+      "price_per_100_unit": "$0.08/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20060827/b3/en/front/20060827_front_a06_@2.png"
+    },
+    {
+      "product_name": "Natural Spring Water 12 Bottles",
+      "brand": "President's Choice",
+      "price": "$2.79",
+      "weight": "12x500.0 ml",
+      "price_per_100_unit": "$0.05/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20005571/b3/en/front/20005571_front_a06_@2.png"
+    },
+    {
+      "product_name": "Variety Pack",
+      "brand": "Pure Life",
+      "price": "$11.99",
+      "weight": "24x500.0 ml",
+      "price_per_100_unit": "$0.10/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20983762/b3/en/front/20983762_front_a06_@2.png"
+    }
+  ]
+}
