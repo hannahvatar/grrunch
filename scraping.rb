@@ -2,28 +2,34 @@ require 'selenium-webdriver'
 require 'nokogiri'
 require "json"
 
-# options = Selenium::WebDriver::Chrome::Options.new
-# options.add_argument('--headless')  # Run in headless mode (no UI). This allows the browser to run in the background without opening a visible window
+options = Selenium::WebDriver::Chrome::Options.new
+options.add_argument('--headless')  # Run in headless mode (no UI). This allows the browser to run in the background without opening a visible window
 
 # Initialize the WebDriver for Chrome with the specified options
-# driver = Selenium::WebDriver.for :chrome, options: options
+driver = Selenium::WebDriver.for :chrome, options: options
 
 # Navigate to the specified URL
 # url = 'https://www.scrapingcourse.com/javascript-rendering'
+# url = "https://www.provigo.ca/en/search?search-bar=Orange%20juice"
 # url = "https://www.provigo.ca/en/search?search-bar=Chocolate%20chips%20cookies"
+# url = "https://www.provigo.ca/en/search?search-bar=Water"
+# url = "https://www.provigo.ca/en/search?search-bar=Wine"
+# url = "https://www.provigo.ca/en/search?search-bar=Yogurt"
+# url = "https://www.provigo.ca/en/search?search-bar=Strawberries"
+url = "https://www.provigo.ca/en/search?search-bar=ground%20beef"
 # water, wine, yogurt, strawberries, ground_beef, chocolate_chips_cookies
 
-# driver.get(url)
+driver.get(url)
 
 # Wait for the page to fully load
-# sleep 20
+sleep 15
 
 # Get the page source
 
-# html = driver.page_source
+html = driver.page_source
 # doc = Nokogiri::HTML(html)
 
-# file_path = 'strawberries.html'
+# file_path = 'chocolate_chips_cookies.html'
 
 # File.open(file_path, 'w') do |file|
 #   file.write(doc)
@@ -53,14 +59,19 @@ def scrape_product_details(html)
       regular_price = item.at_css("[data-testid='regular-price']")&.text&.strip
       non_members_price = item.at_css("[data-testid='non-members-price']")&.text&.strip
       sale_price = item.at_css("[data-testid='sale-price']")&.text&.strip
+      # Extract only the price portion, ignoring "sale" or "about"
+      if sale_price
+        price_match = sale_price.match(/\$[\d.,]+/)
+        sale_price = price_match[0] if price_match
+      end
       was_price = item.at_css("[data-testid='was-price']")&.text&.strip
 
       if !regular_price.nil?
         price = regular_price
-      elsif !sale_price.nil? && !was_price.nil?
-        price = sale_price
       elsif !non_members_price.nil? && !sale_price.nil?
         price = non_members_price
+      elsif !sale_price.nil? && !was_price.nil?
+        price = sale_price
       end
       # price = item.at_css("[data-testid='price-product-tile']")&.text&.strip
 
@@ -75,7 +86,7 @@ def scrape_product_details(html)
         weight = weight_match[1] if weight_match
         price_per_100_unit = price_match[0] if price_match
       end
-      next if product_name.nil? || brand.nil? || price.nil? || weight.nil? || img_url.nil?
+      next if product_name.nil? || brand.nil? || price.nil? || weight.nil? || img_url.nil? || price_per_100_unit.nil?
 
       hash = {
         product_name:,
@@ -112,14 +123,14 @@ def scrape_product_details(html)
 end
 
 # Load the content of the saved HTML file
-# html_content = File.read('water.html')
+# html_content = File.read('chocolate_chips_cookies.html')
 
-# scrape_product_details(html)
+scrape_product_details(html)
 
-# json_output = { ChocolateChipsCookies: @products }
-# File.open("chocolate_chips_cookies.json", "wb") do |file|
-#   file.write(JSON.generate(json_output))
-# end
+json_output = { GroundBeef: @products }
+File.open("ground_beef.json", "wb") do |file|
+  file.write(JSON.generate(json_output))
+end
 
 puts "---------------------"
 puts "Total items scraped: #{@counter}"
