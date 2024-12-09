@@ -5,77 +5,88 @@
       "brand": "AQUAFINA",
       "price": "$7.69",
       "weight": "24x500.0 ml",
-      "price_per_100_unit": "$0.06/100ml"
+      "price_per_100_unit": "$0.06/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20060827/b3/en/front/20060827_front_a06_@2.png"
     },
     {
       "product_name": "Free and Clear Golden Peach Sparkling Water",
       "brand": "President's Choice",
       "price": "sale$1.00 MIN 3",
       "weight": "1 l",
-      "price_per_100_unit": "$0.13/100ml"
+      "price_per_100_unit": "$0.13/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20162061002/b3/en/front/20162061002_front_a06_@2.png"
     },
     {
       "product_name": "100% Pure Coconut Water",
       "brand": "Vita Coco",
       "price": "sale$4.50 MIN 2",
       "weight": "1 l",
-      "price_per_100_unit": "$0.60/100ml"
+      "price_per_100_unit": "$0.60/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20332922/b3/en/front/20332922_front_a06_@2.png"
     },
     {
       "product_name": "St Justin Mineral Water",
       "brand": "St-Justin",
       "price": "$17.99",
       "weight": "24x355.0 ml",
-      "price_per_100_unit": "$0.21/100ml"
+      "price_per_100_unit": "$0.21/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20128574/b3/en/front/20128574_front_a06_@2.png"
     },
     {
       "product_name": "Carbonated Water, Lime",
       "brand": "Montellier",
       "price": "$1.59",
       "weight": "1 l",
-      "price_per_100_unit": "$0.16/100ml"
+      "price_per_100_unit": "$0.16/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21096643/b3/en/front/21096643_front_a06_@2.png"
     },
     {
       "product_name": "Natural Spring Water",
       "brand": "Eska",
       "price": "$2.49",
       "weight": "1 l",
-      "price_per_100_unit": "$0.25/100ml"
+      "price_per_100_unit": "$0.25/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20064133/b3/en/front/20064133_front_a06_@2.png"
     },
     {
       "product_name": "Coconut Water Original",
       "brand": "Vita Coco",
       "price": "$2.99",
       "weight": "500 ml",
-      "price_per_100_unit": "$0.60/100ml"
+      "price_per_100_unit": "$0.60/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20782604002/b3/en/front/20782604002_front_a06_@2.png"
     },
     {
       "product_name": "Free & Clear Key Lime Sparkling Water",
       "brand": "President's Choice",
       "price": "sale$1.00 MIN 3",
       "weight": "1 l",
-      "price_per_100_unit": "$0.13/100ml"
+      "price_per_100_unit": "$0.13/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20162061004/b3/en/front/20162061004_front_a06_@2.png"
     },
     {
       "product_name": "Carbonated Natural Mineral Water, Case",
       "brand": "San Pellegrino",
       "price": "sale$5.00 MIN 2",
       "weight": "6x250.0 ml",
-      "price_per_100_unit": "$0.44/100ml"
+      "price_per_100_unit": "$0.44/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20335439001/b3/en/front/20335439001_front_a06_@2.png"
     },
     {
       "product_name": "Water bottle replacement filter, 2 pack",
       "brand": "Brita",
       "price": "$9.49",
       "weight": "2x1.0 ea",
-      "price_per_100_unit": "$4.75/1ea"
+      "price_per_100_unit": "$4.75/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/20648506/b3/en/front/20648506_front_a06_@2.png"
     },
     {
       "product_name": "Fizzi Sparkling Water Maker",
       "brand": "sodastream",
       "price": "$119.99",
       "weight": "1 ea",
-      "price_per_100_unit": "$119.99/1ea"
+      "price_per_100_unit": "$119.99/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21201648/b3/en/front/21201648_front_a06_@2.png"
     }
   ]
 }

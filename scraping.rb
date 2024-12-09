@@ -10,7 +10,8 @@ require "json"
 
 # Navigate to the specified URL
 # url = 'https://www.scrapingcourse.com/javascript-rendering'
-# url = "https://www.provigo.ca/en/search?search-bar=Water"
+# url = "https://www.provigo.ca/en/search?search-bar=Chocolate%20chips%20cookies"
+# water, wine, yogurt, strawberries, ground_beef, chocolate_chips_cookies
 
 # driver.get(url)
 
@@ -89,7 +90,7 @@ def scrape_product_details(html)
       puts "Brand: #{brand}"
       puts "Price: #{price}"
       puts "Weight: #{weight}"
-      puts "Price per 100g: #{price_per_100_unit}"
+      puts "Price per 100unit: #{price_per_100_unit}"
       puts "image_URL: #{img_url}"
       puts "------------------"
       @counter += 1
@@ -111,12 +112,12 @@ def scrape_product_details(html)
 end
 
 # Load the content of the saved HTML file
-html_content = File.read('water.html')
+# html_content = File.read('water.html')
 
-scrape_product_details(html_content)
+# scrape_product_details(html)
 
-# json_output = { Water: @products }
-# File.open("Water.json", "wb") do |file|
+# json_output = { ChocolateChipsCookies: @products }
+# File.open("chocolate_chips_cookies.json", "wb") do |file|
 #   file.write(JSON.generate(json_output))
 # end
 
