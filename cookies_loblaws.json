@@ -1,0 +1,36 @@
+{
+  "ChocolateChipsCookies": [
+    {
+      "product_name": "Chips Ahoy! Chewy Cookies, Chocolate Chip",
+      "brand": "Christie",
+      "price": "$4.99",
+      "weight": "271 g",
+      "price_per_100_unit": "$1.84/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21361512/b3/en/front/21361512_front_a06_@2.png"
+    },
+    {
+      "product_name": "Chocolately Chip Cookies",
+      "brand": "No Name",
+      "price": "$4.49",
+      "weight": "907 g",
+      "price_per_100_unit": "$0.50/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20318678001/b3/en/front/20318678001_front_a06_@2.png"
+    },
+    {
+      "product_name": "The Decadent Chocolate Chip Cookie",
+      "brand": "President's Choice",
+      "price": "$4.99",
+      "weight": "300 g",
+      "price_per_100_unit": "$1.66/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20612257/b3/en/front/20612257_front_a06_@2.png"
+    },
+    {
+      "product_name": "The Decadent Chocolate Chip Cookie",
+      "brand": "President's Choice",
+      "price": "$7.29",
+      "weight": "500 g",
+      "price_per_100_unit": "$1.46/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20612256/b3/en/front/20612256_front_a06_@2.png"
+    }
+  ]
+}
