@@ -14,10 +14,8 @@ def return_html_page_source(url)
   # Initialize the WebDriver for Chrome with the specified options
   driver = Selenium::WebDriver.for :chrome, options: options
   driver.get(url)
-  html = driver.page_source
-
   sleep 15
-
+  html = driver.page_source
   return html
 end
 
@@ -97,7 +95,6 @@ end
 def scrape_product_details(html)
   doc = Nokogiri::HTML(html)
   products = doc.css(".css-1tjthuk")
-
   products.each do |product|
     items = product.css('.css-0')
     items.each do |item|
@@ -128,14 +125,14 @@ end
 # EXAMPLES OF HOW TO USE METHODS
 
 # ------------------------TO SAVE DOM LOCALLY--------------------------------
-# html = return_html_page_source("https://www.provigo.ca/en/search?search-bar=Corn%20Flakes")
-# save_dom_to_local(html, "corn_flakes.html")
+# html = return_html_page_source("https://www.provigo.ca/en/search?search-bar=Orange%20juice")
+# save_dom_to_local(html, "orange_juice.html")
 
 # -------------------TO SCRAPE FROM SAVED HTML---------------------------
-# scrape_from_saved_html_file("chocolate_chips_cookies.html")
+# scrape_from_saved_html_file("orange_juice.html")
 
 # -------------------TO SCRAPE AND SAVE TO JSON---------------------------
-# html = return_html_page_source("https://www.provigo.ca/en/search?search-bar=Corn%20Flakes")
+# html = return_html_page_source("https://www.maxi.ca/en/search?search-bar=Orange+juice")
 # scrape_product_details(html)
-# save_scraped_data_to_json("CornFlake", "corn_flake.json")
-puts "Total items scraped: #{@counter}"
+# save_scraped_data_to_json("OrangeJuice", "orange_juice_from_maxi.json")
+# puts "Total items scraped: #{@counter}"
