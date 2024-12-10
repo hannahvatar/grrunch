@@ -54,7 +54,7 @@ data_list = [data1, data2, data3, data4, data5, data6]
 # puts "List created!"
 
 puts "Creating store..."
-Store.create!(name: "Provigo")
+store =Store.create!(name: "Provigo")
 puts "Store created."
 
 puts "Creating products..."
@@ -62,6 +62,7 @@ data_list.each do |data|
   data.each do |product|
     data_product = Product.create!(name: product["product_name"], brand: product["brand"], weight: product["weight"])
     ProductPrice.create!(price: product["price"], product: data_product)
+    ProductStore.create!(product: data_product, store: store)
   end
 end
 # data1.each do |product|

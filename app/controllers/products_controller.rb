@@ -3,10 +3,9 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
-    @prices = ProductPrice.all
+    @stores = Store.all
     if params[:query].present?
       @products = Product.search_by_name_and_brand(params[:query])
-      @prices = ProductPrice.search_by_price(params[:query])
     end
   end
 

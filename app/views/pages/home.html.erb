@@ -1,32 +1,6 @@
 
 <!-- Navbar -->
-<nav class="navbar">
-
-  <a href="www.grrunch.com" class="navbar__logo">
-    <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733093390/grrunch-logo-text_yceq4n.svg"
-         width="80%"
-         alt="Grrunch Logo">
-  </a>
-
-  <ul class="navbar__menu">
-    <li class="navbar__item">
-
-      <div class="link">
-        <i data-feather="map-pin"></i>
-        <span>See selected stores</span>
-      </div>
-
-      <li class="navbar__item">
-        <button class="btn-secondary btn-secondary--dashed">My shopping list</button>
-      </li>
-
-       <button class="btn-primary btn-primary--white">Sign in</button>
-       <button class="btn-primary">Sign up</button>
-
-
-    </li>
-  </ul>
-</nav>
+<%= render "shared/navbar" %>
 
 <!--End of Navbar -->
 <div>
@@ -45,103 +19,12 @@
 
 <!--Carrousel -->
 
-<div class="carousel">
-  <div class="carousel__track-container">
-    <ul class="carousel__track">
-      <li class="carousel__slide current-slide">
-        <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733344581/carrousel-01_tbu0hf.svg" class="carousel__image">
-      </li>
-      <li class="carousel__slide">
-        <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733344584/carrousel-02_q7nmko.svg" class="carousel__image">
-      </li>
-      <li class="carousel__slide">
-        <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733344582/carrousel-03_jesk6m.svg" class="carousel__image">
-      </li>
-    </ul>
-  </div>
-
-
-
-  <div class="carousel__nav">
-    <button class="carousel__indicator current-slide"></button>
-    <button class="carousel__indicator"></button>
-    <button class="carousel__indicator"></button>
-  </div>
-</div>
+<%= render "shared/carousel" %>
 
 <!--End of Carrousel -->
 
 <!--Product cards -->
-<div class="container-main container-main--purple">
-
-<div class="product-card">
-
-  <div class="product-card__bloc-01">
-     <div class="product-card__bloc-01__col-left">
-        <h6>Strawberries</h6>
-        <p>454 gr</p>
-    </div>
-    <div class="product-card__bloc-01__col-right">
-    <i data-feather="map-pin"></i>
-        <h6>Maxi</h6>
-    </div>
-  </div>
-
-  <div class="product-card__bloc-02">
-
-    <div class="product-card__bloc-02__col-left">
-      <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733417512/img-strawberries_uqeztx.png">
-    </div>
-
-
-    <div class="product-card__bloc-02__col-right">
-      <h6>$2,99</h6>
-      <p>$0,65 / 100 gr</p>
-    </div>
-
-  </div>
-
-   <div class="product-card__bloc-03">
-     <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733418626/echart_artopn.svg">
-
-   </div>
-
-   <div class="product-card__bloc-04">
-
-  <div class="row-01">
-
-    <div class="status-dot-highest"></div>
-      <div class="row-01-left">
-        <div class="price-title">Highest $7,99 ea</div>
-        <div class="price-weight">$1,75 / 100 gr</div>
-     </div>
-
-    <div class="status-dot-avg"></div>
-      <div class="row-01-right">
-        <div class="price-title">Average $5,49 ea</div>
-        <div class="price-weight">$1,20 / 100 gr</div>
-      </div>
-  </div>
-
-    <div class="row-02">
-    <div class="status-dot-lowest"></div>
-      <div class="row-01-left">
-        <div class="price-title">Lowest $2,99 ea</div>
-        <div class="price-weight">$0,65 / 100 gr</div>
-      </div>
-  </div>
-</div>
-      <div class="product-card__bloc-05">
-      <button class="btn-secondary btn-secondary--dashed">
-      Add to list
-      <i data-feather="plus-circle"></i>
-      </button>
-           <div class="link">
-            <span>More details</span>
-      </div>
-
-      </div>
-</div>
+<%= render "shared/product_cards" %>
 <!--End Product cards -->
 </div>
 
