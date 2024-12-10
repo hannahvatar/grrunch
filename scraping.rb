@@ -5,6 +5,75 @@ require "json"
 # VARIABLES
 @counter = 0
 @products = []
+
+# PROVIGO
+# provigo_diet_coke = "https://www.provigo.ca/en/search?search-bar=Diet%20coke"
+# provigo_orange_juice = "https://www.provigo.ca/en/search?search-bar=orange%20juice"
+# provigo_strawberries = "https://www.provigo.ca/en/search?search-bar=strawberries"
+# provigo_yogurt = "https://www.provigo.ca/en/search?search-bar=yogurt"
+# provigo_vanilla_ice_cream = "https://www.provigo.ca/en/search?search-bar=vanilla%20ice%20cream"
+# provigo_ground_beef = "https://www.provigo.ca/en/search?search-bar=ground%20beef"
+# provigo_chicken = "https://www.provigo.ca/en/search?search-bar=chicken"
+# provigo_eggs = "https://www.provigo.ca/en/search?search-bar=eggs"
+# provigo_toilet_paper = "https://www.provigo.ca/en/search?search-bar=toilet%20paper"
+# provigo_corn_flakes = "https://www.provigo.ca/en/search?search-bar=corn%20flakes"
+# provigo_doritos = "https://www.provigo.ca/en/search?search-bar=doritos"
+# provigo_bolognese_sauce = "https://www.provigo.ca/en/search?search-bar=bolognese%20sauce"
+# provigo_butter = "https://www.provigo.ca/en/search?search-bar=butter"
+# provigo_frozen_pizza = "https://www.provigo.ca/en/search?search-bar=frozen%20pizza"
+# provigo_urls = [provigo_diet_coke, provigo_orange_juice, provigo_strawberries,
+#                 provigo_yogurt, provigo_vanilla_ice_cream, provigo_ground_beef,
+#                 provigo_chicken, provigo_eggs, provigo_toilet_paper,
+#                 provigo_corn_flakes, provigo_doritos, provigo_bolognese_sauce,
+#                 provigo_butter, provigo_frozen_pizza]
+
+# # MAXI
+# maxi_diet_coke = "https://www.maxi.ca/en/search?search-bar=Diet+coke"
+# maxi_orange_juice = "https://www.maxi.ca/en/search?search-bar=orange%20juice"
+# maxi_strawberries = "https://www.maxi.ca/en/search?search-bar=strawberries"
+# maxi_yogurt = "https://www.maxi.ca/en/search?search-bar=yogurt"
+# maxi_vanilla_ice_cream = "https://www.maxi.ca/en/search?search-bar=vanilla%20ice%20cream"
+# maxi_ground_beef = "https://www.maxi.ca/en/search?search-bar=ground%20beef"
+# maxi_chicken = "https://www.maxi.ca/en/search?search-bar=chicken"
+# maxi_eggs = "https://www.maxi.ca/en/search?search-bar=eggs"
+# maxi_toilet_paper = "https://www.maxi.ca/en/search?search-bar=toilet%20paper"
+# maxi_corn_flakes = "https://www.maxi.ca/en/search?search-bar=corn%20flakes"
+# maxi_doritos = "https://www.maxi.ca/en/search?search-bar=doritos"
+# maxi_bolognese_sauce = "https://www.maxi.ca/en/search?search-bar=bolognese%20sauce"
+# maxi_butter = "https://www.maxi.ca/en/search?search-bar=butter"
+# maxi_frozen_pizza = "https://www.maxi.ca/en/search?search-bar=frozen%20pizza"
+# maxi_urls = [maxi_diet_coke, maxi_orange_juice, maxi_strawberries,
+#              maxi_yogurt, maxi_vanilla_ice_cream, maxi_ground_beef,
+#              maxi_chicken, maxi_eggs, maxi_toilet_paper,
+#              maxi_corn_flakes, maxi_doritos, maxi_bolognese_sauce,
+#              maxi_butter, maxi_frozen_pizza]
+
+# LOBLAWS
+loblaws_diet_coke = "https://www.loblaws.ca/search?search-bar=Diet%20coke"
+loblaws_orange_juice = "https://www.loblaws.ca/search?search-bar=orange%20juice"
+loblaws_strawberries = "https://www.loblaws.ca/search?search-bar=strawberries"
+loblaws_yogurt = "https://www.loblaws.ca/search?search-bar=yogurt"
+loblaws_vanilla_ice_cream = "https://www.loblaws.ca/search?search-bar=vanilla%20ice%20cream"
+loblaws_ground_beef = "https://www.loblaws.ca/search?search-bar=ground%20beef"
+loblaws_chicken = "https://www.loblaws.ca/search?search-bar=chicken"
+loblaws_eggs = "https://www.loblaws.ca/search?search-bar=eggs"
+loblaws_toilet_paper = "https://www.loblaws.ca/search?search-bar=toilet%20paper"
+loblaws_corn_flakes = "https://www.loblaws.ca/search?search-bar=corn%20flakes"
+loblaws_doritos = "https://www.loblaws.ca/search?search-bar=doritos"
+loblaws_bolognese_sauce = "https://www.loblaws.ca/search?search-bar=bolognese%20sauce"
+loblaws_butter = "https://www.loblaws.ca/search?search-bar=butter"
+loblaws_frozen_pizza = "https://www.loblaws.ca/search?search-bar=frozen%20pizza"
+loblaws_urls = [loblaws_diet_coke, loblaws_orange_juice, loblaws_strawberries,
+                loblaws_yogurt, loblaws_vanilla_ice_cream, loblaws_ground_beef,
+                loblaws_chicken, loblaws_eggs, loblaws_toilet_paper,
+                loblaws_corn_flakes, loblaws_doritos, loblaws_bolognese_sauce,
+                loblaws_butter, loblaws_frozen_pizza]
+
+keyvalues = ["DietCoke", "OrangeJuice", "Strawberries",
+             "Yogurt", "VanillaIceCream", "GroundBeef",
+             "Chicken", "Eggs", "ToiletPaper",
+             "CornFlakes", "Doritos", "BologneseSauce",
+             "Butter", "FrozenPizza"]
 # ----------------------------------------------
 
 # METHODS
@@ -13,10 +82,14 @@ def return_html_page_source(url)
   options.add_argument('--headless')
   # Initialize the WebDriver for Chrome with the specified options
   driver = Selenium::WebDriver.for :chrome, options: options
-  driver.get(url)
-  sleep 15
-  html = driver.page_source
-  return html
+  begin
+    driver.get(url)
+    sleep 10
+    html = driver.page_source
+    return html
+  ensure
+    driver.quit
+  end
 end
 
 def save_dom_to_local(html, file_path)
@@ -116,22 +189,35 @@ def scrape_from_saved_html_file(url)
 end
 
 def save_scraped_data_to_json(key_value, file_path)
-  json_output = { key_value => @products }
+  # json_output = { key_value => @products }
+  if File.exist?(file_path)
+    data = JSON.parse(File.read(file_path))
+  else
+    data = {}
+  end
+
+  data[key_value] = @products
+
   File.open(file_path, "wb") do |file|
-    file.write(JSON.generate(json_output))
+    file.write(JSON.generate(data))
   end
 end
 
 # EXAMPLES OF HOW TO USE METHODS
-
 # ------------------------TO SAVE DOM LOCALLY--------------------------------
-# html = return_html_page_source("https://www.provigo.ca/en/search?search-bar=Orange%20juice")
+# html = return_html_page_source(provigo_orange_juice)
 # save_dom_to_local(html, "orange_juice.html")
 
 # -------------------TO SCRAPE FROM SAVED HTML---------------------------
 # scrape_from_saved_html_file("orange_juice.html")
 
 # -------------------TO SCRAPE AND SAVE TO JSON---------------------------
+loblaws_urls.each_with_index do |product, index|
+  html = return_html_page_source(product)
+  scrape_product_details(html)
+  save_scraped_data_to_json(keyvalues[index], "loblaws_products.json")
+  @products = []
+end
 # html = return_html_page_source("https://www.maxi.ca/en/search?search-bar=Orange+juice")
 # scrape_product_details(html)
 # save_scraped_data_to_json("OrangeJuice", "orange_juice_from_maxi.json")

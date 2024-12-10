@@ -1,0 +1,694 @@
+{
+  "DietCoke": [
+    {
+      "product_name": "Diet Coke",
+      "brand": "Coca-Cola",
+      "price": "$7.99",
+      "weight": "12x355.0 ml",
+      "price_per_100_unit": "$0.19/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20318694003/b3/en/front/20318694003_front_a06_@2.png"
+    },
+    {
+      "product_name": "Diet Coke Cans",
+      "brand": "Coca-Cola",
+      "price": "$11.49",
+      "weight": "24x355.0 ml",
+      "price_per_100_unit": "$0.13/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20308197003/b3/en/front/20308197003_front_a06_@2.png"
+    },
+    {
+      "product_name": "Diet Coke",
+      "brand": "Coca-Cola",
+      "price": "$7.49",
+      "weight": "6x710.0 ml",
+      "price_per_100_unit": "$0.18/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20313741003/b3/en/front/20313741003_front_a06_@2.png"
+    },
+    {
+      "product_name": "Diet , Bottle",
+      "brand": "Coca-Cola",
+      "price": "$3.99",
+      "weight": "2 l",
+      "price_per_100_unit": "$0.20/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20316026001/b3/en/front/20316026001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Diet Coke Caffeine Free",
+      "brand": "Coca-Cola",
+      "price": "$7.99",
+      "weight": "12x355.0 ml",
+      "price_per_100_unit": "$0.19/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20318694004/b3/en/front/20318694004_front_a06_@2.png"
+    }
+  ],
+  "OrangeJuice": [
+    {
+      "product_name": "Pulp Free Orange Juice",
+      "brand": "President's Choice",
+      "price": "$6.50",
+      "weight": "2.5 l",
+      "price_per_100_unit": "$0.26/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21531644/b3/en/front/21531644_front_a06_@2.png"
+    },
+    {
+      "product_name": "Pulp Free Orange Juice",
+      "brand": "President's Choice",
+      "price": "$3.99",
+      "weight": "1.54 l",
+      "price_per_100_unit": "$0.26/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21430531/b3/en/front/21430531_front_a06_@2.png"
+    },
+    {
+      "product_name": "Pulp Free Orange Juice, Bottle",
+      "brand": "Simply",
+      "price": "$6.99",
+      "weight": "1.54 l",
+      "price_per_100_unit": "$0.45/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21086068/b3/en/front/21086068_front_a06_@2.png"
+    },
+    {
+      "product_name": "100% Orange Juice",
+      "brand": "President's Choice",
+      "price": "$2.49",
+      "weight": "1 l",
+      "price_per_100_unit": "$0.25/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21080960/b3/en/front/21080960_front_a06_@2.png"
+    },
+    {
+      "product_name": "Orange Juice with Pulp",
+      "brand": "President's Choice",
+      "price": "$6.50",
+      "weight": "2.5 l",
+      "price_per_100_unit": "$0.26/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21531646/b3/en/front/21531646_front_a06_@2.png"
+    }
+  ],
+  "Strawberries": [
+    {
+      "product_name": "Ontario Greenhouse-Grown Strawberries",
+      "brand": "President's Choice",
+      "price": "$7.00",
+      "weight": "340 g",
+      "price_per_100_unit": "$2.06/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21027142001/b3/en/front/21027142001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Naturally Imperfect Strawberries",
+      "brand": "No Name",
+      "price": "$4.50",
+      "weight": "340 g",
+      "price_per_100_unit": "$1.32/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21591906001/b3/en/front/21591906001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Sliced Strawberries",
+      "brand": "President's Choice",
+      "price": "$4.49",
+      "weight": "600 g",
+      "price_per_100_unit": "$0.75/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20312227/b3/en/front/20312227_front_a06_@2.png"
+    },
+    {
+      "product_name": "Nanö Drinkable Strawberry Yogurt 1%",
+      "brand": "IOGO",
+      "price": "$4.69",
+      "weight": "6x93.0 ml",
+      "price_per_100_unit": "$0.84/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20609687001/b3/en/front/20609687001_front_a06_@2.png"
+    }
+  ],
+  "Yogurt": [
+    {
+      "product_name": "Strawberry Raspberry Blueberry Vanilla Yogurt Cups 1.5%",
+      "brand": "IOGO",
+      "price": "$6.99",
+      "weight": "16x100.0 g",
+      "price_per_100_unit": "$0.44/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20609583001/b3/en/front/20609583001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Yogurt with Probiotics, Vanilla Flavour",
+      "brand": "Activia",
+      "price": "$5.49",
+      "weight": "650 g",
+      "price_per_100_unit": "$0.84/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20325132003/b3/en/front/20325132003_front_a06_@2.png"
+    },
+    {
+      "product_name": "Nanö Drinkable Strawberry Yogurt 1%",
+      "brand": "IOGO",
+      "price": "$4.69",
+      "weight": "6x93.0 ml",
+      "price_per_100_unit": "$0.84/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20609687001/b3/en/front/20609687001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Source 0% Smooth Traditional Yogurt Cups Variety Pack, No Added Sugar - Strawberry, Peach, Raspberry, Fieldberry",
+      "brand": "Yoplait",
+      "price": "$7.49",
+      "weight": "16x100.0 g",
+      "price_per_100_unit": "$0.47/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20317317001/b3/en/front/20317317001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Original Balkan Style Plain Yogurt 6%",
+      "brand": "Astro",
+      "price": "$4.99",
+      "weight": "750 g",
+      "price_per_100_unit": "$0.67/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20165226001/b3/en/front/20165226001_front_a06_@2.png"
+    }
+  ],
+  "VanillaIceCream": [
+    {
+      "product_name": "Natural Vanilla Ice Cream with fresh cream & real vanilla beans",
+      "brand": "Breyers",
+      "price": "$4.49",
+      "weight": "1.66 l",
+      "price_per_100_unit": "$0.27/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20344925001/b3/en/front/20344925001_front_a06_@2.png"
+    },
+    {
+      "product_name": "French Vanilla Ice Cream made in Canada",
+      "brand": "Breyers",
+      "price": "$4.49",
+      "weight": "1.66 l",
+      "price_per_100_unit": "$0.27/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20344925006/b3/en/front/20344925006_front_a06_@2.png"
+    },
+    {
+      "product_name": "Premium French Vanilla Ice Cream",
+      "brand": "Chapmans",
+      "price": "$7.99",
+      "weight": "2 l",
+      "price_per_100_unit": "$0.40/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20323573001/b3/en/front/20323573001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Madagascar Vanilla Super Premium Ice Cream",
+      "brand": "PC Black Label",
+      "price": "$4.00",
+      "weight": "500 ml",
+      "price_per_100_unit": "$0.80/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20604543004/b3/en/front/20604543004_front_a06_@2.png"
+    },
+    {
+      "product_name": "Scoop Shop Vanilla Ice Cream",
+      "brand": "President's Choice",
+      "price": "$4.99",
+      "weight": "946 ml",
+      "price_per_100_unit": "$0.53/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20299983011/b3/en/front/20299983011_front_a06_@2.png"
+    }
+  ],
+  "GroundBeef": [
+    {
+      "product_name": "Free From Lean Ground Beef",
+      "brand": "President's Choice",
+      "price": "$9.99",
+      "weight": "454 g",
+      "price_per_100_unit": "$2.20/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21218152/b3/en/front/21218152_front_a06_@2.png"
+    },
+    {
+      "product_name": "Certified Angus Beef, Extra Lean Ground Sirloin",
+      "brand": "President's Choice",
+      "price": "$10.49",
+      "weight": "454 g",
+      "price_per_100_unit": "$2.31/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21406595/b3/en/front/21406595_front_a06_@2.png"
+    },
+    {
+      "product_name": "Minced Turkey",
+      "brand": "PC Blue Menu",
+      "price": "$7.00",
+      "weight": "454 g",
+      "price_per_100_unit": "$1.54/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21100092/b3/en/front/21100092_front_a06_@2.png"
+    }
+  ],
+  "Chicken": [
+    {
+      "product_name": "Boneless Skinless Chicken Breasts",
+      "brand": "PC Blue Menu",
+      "price": "$13.00",
+      "weight": "1 ea",
+      "price_per_100_unit": "$13.00/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21340952/b3/en/front/21340952_front_a06_@2.png"
+    },
+    {
+      "product_name": "Chicken Thighs  boneless Skinless 8 Pack",
+      "brand": "PC Blue Menu",
+      "price": "$13.00",
+      "weight": "1 ea",
+      "price_per_100_unit": "$13.00/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21341017/b3/en/front/21341017_front_a06_@2.png"
+    },
+    {
+      "product_name": "Air Chilled Chicken Breast Fillets, Boneless, Skinless",
+      "brand": "PC Blue Menu",
+      "price": "$11.00",
+      "weight": "1 ea",
+      "price_per_100_unit": "$11.00/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21341048/b3/en/front/21341048_front_a06_@2.png"
+    },
+    {
+      "product_name": "BBQ Chicken  (Available after 11am)",
+      "brand": "President's Choice",
+      "price": "$12.99",
+      "weight": "900 g",
+      "price_per_100_unit": "$1.44/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20252014/b3/en/front/20252014_front_a06_@2.png"
+    }
+  ],
+  "Eggs": [
+    {
+      "product_name": "Large Grade A Eggs",
+      "brand": "No Name",
+      "price": "$3.93",
+      "weight": "12 ea",
+      "price_per_100_unit": "$0.33/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/20812144001/b3/en/front/20812144001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Large Size Eggs",
+      "brand": "No Name",
+      "price": "$9.65",
+      "weight": "30 ea",
+      "price_per_100_unit": "$0.32/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21435777001/b3/en/front/21435777001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Grade A Extra Large Eggs",
+      "brand": "No Name",
+      "price": "$4.63",
+      "weight": "12 ea",
+      "price_per_100_unit": "$0.39/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/20812726001/b3/en/front/20812726001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Free Run Brown Eggs Large",
+      "brand": "President's Choice",
+      "price": "$7.09",
+      "weight": "12 ea",
+      "price_per_100_unit": "$0.59/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/20813628001/b3/en/front/20813628001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Naturegg Nest Laid White Eggs, Large",
+      "brand": "Burnbrae Farms",
+      "price": "$5.49",
+      "weight": "12 ea",
+      "price_per_100_unit": "$0.46/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/20816075001/b3/en/front/20816075001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Free-Range Large Brown Eggs, Club Pack (30 Count)",
+      "brand": "PC Organics",
+      "price": "$17.25",
+      "weight": "30 ea",
+      "price_per_100_unit": "$0.58/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21205224001/b3/en/front/21205224001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Grade A Large Eggs",
+      "brand": "Burnbrae Farms",
+      "price": "$7.09",
+      "weight": "18 ea",
+      "price_per_100_unit": "$0.39/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/20814294001/b3/en/front/20814294001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Grade A Large Brown Eggs",
+      "brand": "No Name",
+      "price": "$6.23",
+      "weight": "12 ea",
+      "price_per_100_unit": "$0.52/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/20813936001/b3/en/front/20813936001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Eggo Original Waffles, 8 waffles",
+      "brand": "Kelloggs",
+      "price": "$4.49",
+      "weight": "280 g",
+      "price_per_100_unit": "$1.60/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20302779/b3/en/front/20302779_front_a06_@2.png"
+    },
+    {
+      "product_name": "Free Range Large Brown Eggs",
+      "brand": "PC Organics",
+      "price": "$7.83",
+      "weight": "12 ea",
+      "price_per_100_unit": "$0.65/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/20813711001/b3/en/front/20813711001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Eggo Original Waffles, 16 waffles",
+      "brand": "Kelloggs",
+      "price": "$7.49",
+      "weight": "560 g",
+      "price_per_100_unit": "$1.34/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20099730004/b3/en/front/20099730004_front_a06_@2.png"
+    }
+  ],
+  "ToiletPaper": [
+    {
+      "product_name": "Super Soft Hypoallergenic Bathroom Tissue Club Pack",
+      "brand": "President's Choice",
+      "price": "$20.99",
+      "weight": "30 ea",
+      "price_per_100_unit": "$0.70/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21450846/b3/en/front/21450846_front_a06_@2.png"
+    },
+    {
+      "product_name": "Super Soft Hypoallergenic Bathroom Tissue 12 Pack",
+      "brand": "President's Choice",
+      "price": "$7.99",
+      "weight": "1 ea",
+      "price_per_100_unit": "$0.03/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21450718/b3/en/front/21450718_front_a06_@2.png"
+    },
+    {
+      "product_name": "Soft & Thick Toilet Paper, 12 Double Rolls = 24 Single Rolls",
+      "brand": "Cashmere",
+      "price": "$14.99",
+      "weight": "12 ea",
+      "price_per_100_unit": "$1.25/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21204739/b3/en/front/21204739_front_a06_@2.png"
+    },
+    {
+      "product_name": "Max Soft Toilet Paper, 12 Double Rolls = 24 Single Rolls",
+      "brand": "President's Choice",
+      "price": "$7.99",
+      "weight": "12 ea",
+      "price_per_100_unit": "$0.67/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21300716/b3/en/front/21300716_front_a06_@2.png"
+    },
+    {
+      "product_name": "Bathroom Tissue 2 Ply 8 Rolls",
+      "brand": "Cashmere",
+      "price": "$11.99",
+      "weight": "8 ea",
+      "price_per_100_unit": "$1.50/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21204742/b3/en/front/21204742_front_a06_@2.png"
+    },
+    {
+      "product_name": "Ultra Soft Toilet Paper, 12 Equal 48 Rolls, 224 Bathroom Tissues per roll",
+      "brand": "Charmin",
+      "price": "$17.99",
+      "weight": "12 ea",
+      "price_per_100_unit": "$1.50/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/21549779/b3/en/front/21549779_front_a06_@2.png"
+    },
+    {
+      "product_name": "Bathroom tissue, 24 Rolls",
+      "brand": "No Name",
+      "price": "$8.99",
+      "weight": "1 ea",
+      "price_per_100_unit": "$0.37/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/20963747/b3/en/front/20963747_front_a06_@2.png"
+    },
+    {
+      "product_name": "Planet First Soft and Thick Double Roll Bath Tissue, 12 Rolls",
+      "brand": "PC Green",
+      "price": "$8.99",
+      "weight": "1 ea",
+      "price_per_100_unit": "$0.75/1ea",
+      "img_url": "https://assets.shop.loblaws.ca/products/20757938/b3/en/front/20757938_front_a06_@2.png"
+    }
+  ],
+  "CornFlakes": [
+    {
+      "product_name": "Corn Flakes Family Size",
+      "brand": "Kelloggs",
+      "price": "$7.99",
+      "weight": "600 g",
+      "price_per_100_unit": "$1.33/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21450811/b3/en/front/21450811_front_a06_@2.png"
+    },
+    {
+      "product_name": "Corn Flakes Cereal",
+      "brand": "Kelloggs",
+      "price": "$5.99",
+      "weight": "340 g",
+      "price_per_100_unit": "$1.76/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21450851/b3/en/front/21450851_front_a06_@2.png"
+    },
+    {
+      "product_name": "Corn Flake Crumbs",
+      "brand": "Kelloggs",
+      "price": "$5.99",
+      "weight": "575 g",
+      "price_per_100_unit": "$1.04/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20128752/b3/en/front/20128752_front_a06_@2.png"
+    },
+    {
+      "product_name": "Honey'd Corn Flakes",
+      "brand": "Nature's Path",
+      "price": "$10.99",
+      "weight": "750 g",
+      "price_per_100_unit": "$1.47/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20319302003/b3/en/front/20319302003_front_a06_@2.png"
+    },
+    {
+      "product_name": "Organic Corn Flakes Cereal",
+      "brand": "Nature's Path",
+      "price": "$10.99",
+      "weight": "750 g",
+      "price_per_100_unit": "$1.47/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20319302002/b3/en/front/20319302002_front_a06_@2.png"
+    }
+  ],
+  "Doritos": [
+    {
+      "product_name": "Nacho Cheese flavoured tortilla chips",
+      "brand": "Doritos",
+      "price": "$5.49",
+      "weight": "235 g",
+      "price_per_100_unit": "$2.34/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21369118/b3/en/front/21369118_front_a06_@2.png"
+    },
+    {
+      "product_name": "Nacho Chips",
+      "brand": "Doritos",
+      "price": "$5.99",
+      "weight": "370 g",
+      "price_per_100_unit": "$1.62/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21370250/b3/en/front/21370250_front_a06_@2.png"
+    },
+    {
+      "product_name": "Cool Ranch Flavoured Tortilla Chips",
+      "brand": "Doritos",
+      "price": "$5.49",
+      "weight": "235 g",
+      "price_per_100_unit": "$2.34/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21369106/b3/en/front/21369106_front_a06_@2.png"
+    },
+    {
+      "product_name": "Sweet Chili Heat! flavoured tortilla chips",
+      "brand": "Doritos",
+      "price": "$5.49",
+      "weight": "235 g",
+      "price_per_100_unit": "$2.34/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21369112/b3/en/front/21369112_front_a06_@2.png"
+    },
+    {
+      "product_name": "Zesty Cheese flavoured tortilla chips",
+      "brand": "Doritos",
+      "price": "$5.49",
+      "weight": "235 g",
+      "price_per_100_unit": "$2.34/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21369102/b3/en/front/21369102_front_a06_@2.png"
+    },
+    {
+      "product_name": "Jalapeño & Cheddar flavoured tortilla chips",
+      "brand": "Doritos",
+      "price": "$5.49",
+      "weight": "235 g",
+      "price_per_100_unit": "$2.34/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21369080/b3/en/front/21369080_front_a06_@2.png"
+    },
+    {
+      "product_name": "Bold BBQ Flavoured Tortilla Chips",
+      "brand": "Doritos",
+      "price": "$5.49",
+      "weight": "235 g",
+      "price_per_100_unit": "$2.34/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21369086/b3/en/front/21369086_front_a06_@2.png"
+    },
+    {
+      "product_name": "Sweet Chili Heat! flavoured tortilla chips",
+      "brand": "Doritos",
+      "price": "$5.99",
+      "weight": "370 g",
+      "price_per_100_unit": "$1.62/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21370189/b3/en/front/21370189_front_a06_@2.png"
+    },
+    {
+      "product_name": "Spicy Nacho flavoured tortilla chips",
+      "brand": "Doritos",
+      "price": "$5.49",
+      "weight": "235 g",
+      "price_per_100_unit": "$2.34/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21369068/b3/en/front/21369068_front_a06_@2.png"
+    },
+    {
+      "product_name": "Minis Nacho Cheese Flavoured Tortilla Chips",
+      "brand": "Doritos",
+      "price": "$3.99",
+      "weight": "145 g",
+      "price_per_100_unit": "$2.75/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21613317/b3/en/front/21613317_front_a06_@2.png"
+    },
+    {
+      "product_name": "Nacho Cheese Tortilla Chips",
+      "brand": "Doritos",
+      "price": "$2.39",
+      "weight": "72 g",
+      "price_per_100_unit": "$3.32/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21584942/b3/en/front/21584942_front_a06_@2.png"
+    }
+  ],
+  "BologneseSauce": [
+    {
+      "product_name": "Bolognese Pasta Sauce",
+      "brand": "President's Choice",
+      "price": "$4.49",
+      "weight": "425 ml",
+      "price_per_100_unit": "$1.06/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/20315145002/b3/en/front/20315145002_front_a06_@2.png"
+    },
+    {
+      "product_name": "Creamy Bolognese",
+      "brand": "Good Food for Good",
+      "price": "$10.99",
+      "weight": "450 ml",
+      "price_per_100_unit": "$2.44/100ml",
+      "img_url": "https://assets.shop.loblaws.ca/products/21416388/b3/en/front/21416388_front_a06_@2.png"
+    },
+    {
+      "product_name": "Spaghetti Pasta",
+      "brand": "No Name",
+      "price": "$2.29",
+      "weight": "900 g",
+      "price_per_100_unit": "$0.25/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20315613002/b3/en/front/20315613002_front_a06_@2.png"
+    },
+    {
+      "product_name": "Spaghetti",
+      "brand": "Italpasta",
+      "price": "$3.49",
+      "weight": "900 g",
+      "price_per_100_unit": "$0.39/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20081342001/b3/en/front/20081342001_front_a06_@2.png"
+    },
+    {
+      "product_name": "Rigatoni Pasta",
+      "brand": "Barilla",
+      "price": "$2.99",
+      "weight": "410 g",
+      "price_per_100_unit": "$0.73/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21404923/b3/en/front/21404923_front_a06_@2.png"
+    },
+    {
+      "product_name": "Spaghetti Pasta",
+      "brand": "President's Choice",
+      "price": "$2.99",
+      "weight": "454 g",
+      "price_per_100_unit": "$0.66/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21001944/b3/en/front/21001944_front_a06_@2.png"
+    }
+  ],
+  "Butter": [
+    {
+      "product_name": "Salted Butter",
+      "brand": "No Name",
+      "price": "$5.99",
+      "weight": "454 g",
+      "price_per_100_unit": "$1.32/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20325029/b3/en/front/20325029_front_a06_@2.png"
+    },
+    {
+      "product_name": "Salted Butter",
+      "brand": "Lactantia",
+      "price": "$5.99",
+      "weight": "454 g",
+      "price_per_100_unit": "$1.32/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20639926/b3/en/front/20639926_front_a06_@2.png"
+    },
+    {
+      "product_name": "Unsalted Butter",
+      "brand": "No Name",
+      "price": "$5.99",
+      "weight": "454 g",
+      "price_per_100_unit": "$1.32/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20316543002/b3/en/front/20316543002_front_a06_@2.png"
+    },
+    {
+      "product_name": "Butter Unsalted",
+      "brand": "Lactantia",
+      "price": "$5.99",
+      "weight": "454 g",
+      "price_per_100_unit": "$1.32/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20296112005/b3/en/front/20296112005_front_a06_@2.png"
+    },
+    {
+      "product_name": "Country Churned Salted Butter, 4 Units",
+      "brand": "Lactantia",
+      "price": "$6.99",
+      "weight": "4x113.0 g",
+      "price_per_100_unit": "$1.55/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20315960/b3/en/front/20315960_front_a06_@2.png"
+    },
+    {
+      "product_name": "Salted Butter",
+      "brand": "Gay Lea",
+      "price": "$8.99",
+      "weight": "454 g",
+      "price_per_100_unit": "$1.98/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20559408/b3/en/front/20559408_front_a06_@2.png"
+    }
+  ],
+  "FrozenPizza": [
+    {
+      "product_name": "Giuseppe Pizzeria Rising Crust Pepperoni Pizza",
+      "brand": "Dr Oetker",
+      "price": "$6.99",
+      "weight": "720 g",
+      "price_per_100_unit": "$0.97/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21106361/b3/en/front/21106361_front_a06_@2.png"
+    },
+    {
+      "product_name": "Ristorante Thin Crust Pepperoni Pizza",
+      "brand": "Dr Oetker",
+      "price": "$3.49",
+      "weight": "320 g",
+      "price_per_100_unit": "$1.09/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20852957/b3/en/front/20852957_front_a06_@2.png"
+    },
+    {
+      "product_name": "Pepperoni Thin and Crispy Pizza",
+      "brand": "President's Choice",
+      "price": "$3.49",
+      "weight": "343 g",
+      "price_per_100_unit": "$1.02/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/20971494/b3/en/front/20971494_front_a06_@2.png"
+    },
+    {
+      "product_name": "Loads Of Bacon, Pepperoni and Ham Thin Crust Pizza",
+      "brand": "President's Choice",
+      "price": "$3.49",
+      "weight": "400 g",
+      "price_per_100_unit": "$0.87/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21102731/b3/en/front/21102731_front_a06_@2.png"
+    },
+    {
+      "product_name": "Loads Of Pepperoni Thin Crust Pizza",
+      "brand": "President's Choice",
+      "price": "$3.49",
+      "weight": "400 g",
+      "price_per_100_unit": "$0.87/100g",
+      "img_url": "https://assets.shop.loblaws.ca/products/21102727/b3/en/front/21102727_front_a06_@2.png"
+    }
+  ]
+}
