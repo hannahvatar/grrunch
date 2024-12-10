@@ -1,11 +1,14 @@
 class PagesController < ApplicationController
 
-def home
-  @products = Product.includes(:stores, :product_prices).order("RANDOM()").limit(3).all
-  if params[:query].present?
-    @products = Product.search_by_name_and_brand(params[:query])
+  def home
+    @products = Product.includes(:stores, :product_prices).order("RANDOM()").limit(6).all
+    if params[:query].present?
+      @products = Product.search_by_name_and_brand(params[:query])
+    end
+    @current_page = params[:page]&.to_i || 1
+    @products_per_page = 3
+    @total_pages = (@products.size.to_f / @products_per_page).ceil
   end
-end
 
   def preferences
   end
