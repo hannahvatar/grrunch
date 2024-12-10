@@ -1,6 +1,10 @@
 <div id="chart-<%= unique_id %>" style="width: 300px;height:260px;">
   <script type="text/javascript">
     var myChart = echarts.init(document.getElementById('chart-<%= unique_id %>'));
+    var randomData = Array.from({ length: 7 }, () => (Math.random() * 10).toFixed(2));
+    var numericData = randomData.map(Number);
+    var minValue = Math.min(...numericData);
+    numericData[6] = minValue;
     var option = {
         grid: {
           top: 20,
@@ -49,7 +53,7 @@
         },
         series: [
           {
-            data: [4.99, 5.29, 5.49, 7.99, 5.69, 5.99, 2.99],
+            data: numericData,
             type: 'line',
             lineStyle: {
               color: '#9646FF'
@@ -76,7 +80,8 @@
               },
               data: [
                 {
-                  coord: [6, 2.99]
+                  coord: [6, minValue]
+                  // coord: [1,1]
                 }
               ]
             }
