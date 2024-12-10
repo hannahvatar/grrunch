@@ -44,21 +44,21 @@ data_list = [data1, data2, data3]
 # list1 = List.create!(user: user1)
 # puts "List created!"
 
-# puts "Creating stores..."
+puts "Creating stores..."
 
 # UNCOMMENT THESE 3 LINES THE FIRST TIME
-# provigo = Store.create!(name: "Provigo")
-# maxi = Store.create!(name: "Maxi")
-# loblaws = Store.create!(name: "Loblaws")
+provigo = Store.create!(name: "Provigo")
+maxi = Store.create!(name: "Maxi")
+loblaws = Store.create!(name: "Loblaws")
 # COMMENT THEM AFTER YOU RUN RAILS DB SEED
 
 # COMMENT THESE 3 LINES THE FIRST TIME
-provigo = Store.find_by(name: "Provigo")
-maxi = Store.find_by(name: "Maxi")
-loblaws = Store.find_by(name: "Loblaws")
+# provigo = Store.find_by(name: "Provigo")
+# maxi = Store.find_by(name: "Maxi")
+# loblaws = Store.find_by(name: "Loblaws")
 # UNCOMMENT THEM AFTER YOU RUN RAILS DB SEED
 stores = [provigo, maxi, loblaws]
-# puts "Stores created."
+puts "Stores created."
 
 puts "Creating products..."
 data_list.each_with_index do |data, index|
@@ -72,11 +72,8 @@ data_list.each_with_index do |data, index|
           img_url: product["img_url"],
           price_per_100_unit: product["price_per_100_unit"]
         )
-      puts "Creating product_store..."
-      ProductStore.create!(product: data_product, store: stores[index])
-      puts "Product store created!"
       puts "Creating product_price..."
-      ProductPrice.create!(price: product["price"], product: data_product, scraping_date: Time.now)
+      ProductPrice.create!(price: product["price"], product: data_product, scraping_date: Time.now, store: stores[index])
       puts "Product price created!"
     end
   end
