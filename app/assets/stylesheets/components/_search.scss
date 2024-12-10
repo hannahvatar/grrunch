@@ -1,8 +1,8 @@
 .search {
   display: flex;
-  margin: $spacing-32;
   align-items: center;
   width: calc(100% - #{$spacing-32 * 2});
+  margin-bottom: 16px;
   position: relative;
 
   &__input {
