@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const dots = Array.from(dotsNav.children);
 
   const slideWidth = slides[0].getBoundingClientRect().width;
+  let autoRotateInterval;
+  let isManualControl = false;
 
   // Arrange slides side by side
   slides.forEach((slide, index) => {
@@ -39,25 +41,21 @@ document.addEventListener('DOMContentLoaded', function () {
     updateDots(currentDot, nextDot);
   };
 
-  // Start auto-rotation
-  let autoRotateInterval = setInterval(autoRotate, 3000);
-
-  // Pause auto-rotation on hover
-  track.addEventListener('mouseenter', () => {
-    clearInterval(autoRotateInterval);
-  });
-
-  // Resume auto-rotation when mouse leaves
-  track.addEventListener('mouseleave', () => {
+  // Function to start auto-rotation
+  const startAutoRotate = () => {
     autoRotateInterval = setInterval(autoRotate, 3000);
-  });
+  };
+
+  // Start initial auto-rotation
+  startAutoRotate();
 
   // Event listener for the dots navigation
   dotsNav.addEventListener('click', (e) => {
     const targetDot = e.target.closest('.carousel__indicator');
     if (!targetDot) return;
 
-    clearInterval(autoRotateInterval); // Stop auto-rotation when manually navigating
+    // Clear existing intervals
+    clearInterval(autoRotateInterval);
 
     const currentSlide = track.querySelector('.current-slide');
     const currentDot = dotsNav.querySelector('.current-slide');
@@ -67,7 +65,9 @@ document.addEventListener('DOMContentLoaded', function () {
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
 
-    // Restart auto-rotation after manual navigation
-    autoRotateInterval = setInterval(autoRotate, 3000);
+    // Resume auto-rotation after 10 seconds
+    setTimeout(() => {
+      startAutoRotate();
+    }, 3000); // 10 seconds delay
   });
 });
