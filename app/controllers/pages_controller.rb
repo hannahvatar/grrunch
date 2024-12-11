@@ -2,6 +2,7 @@ class PagesController < ApplicationController
 
 def home
   @products = Product.includes(:stores, :product_prices).order("RANDOM()").limit(3).all
+  @lower_than_average = Product.all
   if params[:query].present?
     @products = Product.search_by_name_and_brand(params[:query])
   end
