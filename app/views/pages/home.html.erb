@@ -2,11 +2,11 @@
 <!-- Navbar -->
 <nav class="navbar">
 
-  <a href="www.grrunch.com" class="navbar__logo">
+  <%= link_to root_path, class: "navbar__logo" do %>
     <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733093390/grrunch-logo-text_yceq4n.svg"
          width="80%"
          alt="Grrunch Logo">
-  </a>
+  <% end %>
 
   <ul class="navbar__menu">
     <li class="navbar__item">
@@ -29,19 +29,19 @@
 </nav>
 
 <!--End of Navbar -->
+<div class="container-left-align">
+  <!--Search bar -->
+  <%= render "shared/search_bar" %>
+  <!--End of Search bar -->
 
-  <div class="container-left-align">
-      <!--Search bar -->
-      <%= render "shared/search_bar" %>
-      <!--End of Search bar -->
-    <div class="container-hrz">
-      <p>Or search within these categories</p>
-      <i data-feather="arrow-right"></i>
-    </div>
-
-      <h1>Bites Into Grocery Prices</h1>
-
+  <div class="container-hrz">
+    <p>Or search within these categories</p>
+    <i data-feather="arrow-right"></i>
   </div>
+
+  <h1>Bites Into Grocery Prices</h1>
+
+</div>
 
 
 <div class="container">
