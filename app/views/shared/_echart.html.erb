@@ -1,0 +1,93 @@
+<div id="chart-<%= unique_id %>" style="width: 300px;height:260px;">
+  <script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('chart-<%= unique_id %>'));
+    var randomData = Array.from({ length: 7 }, () => (Math.random() * 10).toFixed(2));
+    var numericData = randomData.map(Number);
+    var minValue = Math.min(...numericData);
+    numericData[6] = minValue;
+    var option = {
+        grid: {
+          top: 20,
+          bottom: 0,
+          left: 10,
+          right: 10,
+          containLabel: true
+        },
+        xAxis: {
+          type: 'category',
+          data: ['Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Today'],
+          axisLine: {
+            show: true,
+            lineStyle: {
+              color: '#000000',
+              width: 1
+            }
+          },
+          axisTick: {
+            show: false
+          }
+        },
+        textStyle: {
+          fontFamily: 'Open Sans',
+          fontSize: 8,
+          color: '#000000',
+        },
+        yAxis: {
+          min: 0,
+          max: 10,
+          interval: 2,
+          axisLine: {
+            lineStyle: {
+              color: '#000000',
+              width: 2
+            }
+          },
+          splitLine: {
+            show: false
+          },
+          axisLabel: {
+            formatter: function(value) {
+              return '$' + value;
+            }
+          }
+        },
+        series: [
+          {
+            data: numericData,
+            type: 'line',
+            lineStyle: {
+              color: '#9646FF'
+            },
+            showSymbol: false,
+            symbolSize: 8,
+            areaStyle: {
+              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                {
+                  offset: 0,
+                  color: 'rgba(150, 70, 255, 0.7)'  // More opaque red at the top
+                },
+                {
+                  offset: 1,
+                  color: 'rgba(150, 70, 255, 0.1)'  // More transparent red at the bottom
+                }
+              ])
+            },
+            markPoint: {
+              symbol: 'circle',
+              symbolSize: 8,
+              itemStyle: {
+                color: '#9646FF'
+              },
+              data: [
+                {
+                  coord: [6, minValue]
+                  // coord: [1,1]
+                }
+              ]
+            }
+          }
+        ]
+      };
+    myChart.setOption(option);
+  </script>
+</div>

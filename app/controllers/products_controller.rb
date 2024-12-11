@@ -13,9 +13,11 @@
 
 class ProductsController < ApplicationController
   def index
-    @products = Product.includes(:stores, :product_prices)
+    @product_prices = ProductPrice.all
+    # @products = Product.includes(:stores, :product_prices)
     if params[:query].present?
-    @products = @products.search_by_name_and_brand(params[:query])
+    @product_prices = @product_prices.search_by_name_and_brand(params[:query])
+    @product_prices = @product_prices.sort_by { |p| [p.price, p.product.price_per_100_unit] }
     end
   end
 end

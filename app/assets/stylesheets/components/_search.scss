@@ -5,6 +5,10 @@
   margin-bottom: 16px;
   position: relative;
 
+  &__form {
+    width: calc(100% - #{$spacing-32 * 2});
+  }
+
   &__input {
     width: 100%;
     padding: $spacing-12 $spacing-16;

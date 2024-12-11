@@ -11,43 +11,29 @@
 require 'json'
 
 # User.destroy_all
-ProductStore.destroy_all
-ProductPrice.destroy_all
-Store.destroy_all
-Product.destroy_all
+##### UNCOMMENT THESE 4 LINES THE FIRST TIME
+#  ProductPrice.destroy_all
+#  Store.destroy_all
+#  Product.destroy_all
+##### COMMENT THEM AGAIN AFTER YOU RUN RAILS DB SEED
+
 # List.destroy_all
 
-file_path_cookies = Rails.root.join('db', 'data', 'chocolate_chips_cookies.json')
-file_path_beef = Rails.root.join('db', 'data', "ground_beef.json")
-file_path_strawberries = Rails.root.join('db', 'data', "strawberries.json")
-file_path_wine = Rails.root.join('db', 'data', "wine.json")
-file_path_yogurt = Rails.root.join('db', 'data', "yogurt.json")
-file_path_water = Rails.root.join('db', 'data', "water.json")
-file_path_orange = Rails.root.join('db', 'data', "orange_juice.json")
+file_path_provigo = Rails.root.join('db', 'data', "provigo_products.json")
+file_path_maxi = Rails.root.join('db', 'data', "maxi_products.json")
+file_path_loblaws = Rails.root.join('db', 'data', "loblaws_products.json")
 
-file_content_cookies = File.read(file_path_cookies)
-file_content_beef = File.read(file_path_beef)
-file_content_strawberries = File.read(file_path_strawberries)
-file_content_wine = File.read(file_path_wine)
-file_content_yogurt = File.read(file_path_yogurt)
-file_content_water = File.read(file_path_water)
-file_content_orange = File.read(file_path_orange)
+file_content_provigo = File.read(file_path_provigo)
+file_content_maxi = File.read(file_path_maxi)
+file_content_loblaws = File.read(file_path_loblaws)
 
-products = JSON.parse(file_content_cookies)
-data1 = products["ChocolateChipsCookies"]
-products = JSON.parse(file_content_beef)
-data2 = products["GroundBeef"]
-products = JSON.parse(file_content_strawberries)
-data3 = products["Strawberries"]
-products = JSON.parse(file_content_wine)
-data4 = products["Wine"]
-products = JSON.parse(file_content_yogurt)
-data5 = products["Yogurt"]
-products = JSON.parse(file_content_water)
-data6 = products["Water"]
-products = JSON.parse(file_content_orange)
-data7 = products["OrangeJuice"]
-data_list = [data1, data2, data3, data4, data5, data6, data7]
+products = JSON.parse(file_content_provigo)
+data1 = products
+products = JSON.parse(file_content_maxi)
+data2 = products
+products = JSON.parse(file_content_loblaws)
+data3 = products
+data_list = [data1, data2, data3]
 
 # puts "Creating user..."
 # user1 = User.create!(email: "test@email.com", password: "123456")
@@ -57,25 +43,38 @@ data_list = [data1, data2, data3, data4, data5, data6, data7]
 # list1 = List.create!(user: user1)
 # puts "List created!"
 
-puts "Creating store..."
+puts "Creating stores..."
+
+# UNCOMMENT THESE 3 LINES THE FIRST TIME
 provigo = Store.create!(name: "Provigo")
-puts "Store created."
+maxi = Store.create!(name: "Maxi")
+loblaws = Store.create!(name: "Loblaws")
+# COMMENT THEM AFTER YOU RUN RAILS DB SEED
+
+# COMMENT THESE 3 LINES THE FIRST TIME
+# provigo = Store.find_by(name: "Provigo")
+# maxi = Store.find_by(name: "Maxi")
+# loblaws = Store.find_by(name: "Loblaws")
+# UNCOMMENT THEM AFTER YOU RUN RAILS DB SEED
+stores = [provigo, maxi, loblaws]
+puts "Stores created."
 
 puts "Creating products..."
-data_list.each do |data|
-  data.each do |product|
-    data_product = Product.create!(name: product["product_name"],
-      brand: product["brand"],
-      weight: product["weight"],
-      img_url: product["img_url"],
-      price_per_100_unit: product["price_per_100_unit"]
-    )
-    puts "Creating product_store..."
-    ProductStore.create!(product: data_product, store: provigo)
-    puts "Product store created!"
-    puts "Creating product_price..."
-    ProductPrice.create!(price: product["price"], product: data_product)
-    puts "Product price created!"
+data_list.each_with_index do |data, index|
+  data.each do |category, items|
+    puts "Category: #{category}"
+    items.each do |product|
+      data_product = Product.create!(
+          name: product["product_name"],
+          brand: product["brand"],
+          weight: product["weight"],
+          img_url: product["img_url"],
+          price_per_100_unit: product["price_per_100_unit"]
+        )
+      puts "Creating product_price..."
+      ProductPrice.create!(price: product["price"], product: data_product, scraping_date: Time.now, store: stores[index])
+      puts "Product price created!"
+    end
   end
 end
 puts "Products created!"
