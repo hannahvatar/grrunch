@@ -46,15 +46,15 @@ data_list = [data1, data2, data3]
 puts "Creating stores..."
 
 # UNCOMMENT THESE 3 LINES THE FIRST TIME
-# provigo = Store.create!(name: "Provigo")
-# maxi = Store.create!(name: "Maxi")
-# loblaws = Store.create!(name: "Loblaws")
+provigo = Store.create!(name: "Provigo")
+maxi = Store.create!(name: "Maxi")
+loblaws = Store.create!(name: "Loblaws")
 # COMMENT THEM AFTER YOU RUN RAILS DB SEED
 
 # COMMENT THESE 3 LINES THE FIRST TIME
-provigo = Store.find_by(name: "Provigo")
-maxi = Store.find_by(name: "Maxi")
-loblaws = Store.find_by(name: "Loblaws")
+# provigo = Store.find_by(name: "Provigo")
+# maxi = Store.find_by(name: "Maxi")
+# loblaws = Store.find_by(name: "Loblaws")
 # UNCOMMENT THEM AFTER YOU RUN RAILS DB SEED
 stores = [provigo, maxi, loblaws]
 puts "Stores created."
