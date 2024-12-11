@@ -7,143 +7,39 @@
   <link rel="stylesheet" href="style.scss">
 </head>
 <body>
-  <table class="product-table">
-    <thead>
-      <tr>
-        <th></th>
-        <th></th>
-        <th>Product Name</th>
-        <th>Store</th>
-        <th>Brand</th>
-        <th>Weight</th>
-        <th>Min Qty</th>
-        <th>Price Ea.</th>
-        <th>Price/100gr</th>
-        <th>Add to my list</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-        <td>*</td>
-        <td>Chocolately Chip Cookies</td>
-        <td>Maxi</td>
-        <td>No Name</td>
-        <td>907 gr</td>
-        <td>2</td>
-        <td class="price-cell">$4.00</td>
-        <td class="price-cell">$0.44</td>
-        <td class="action-cell">+</td>
-      </tr>
-      <tr>
-        <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-        <td>*</td>
-        <td>Chocolately Chip Cookies</td>
-        <td>Maxi</td>
-        <td>No Name</td>
-        <td>907 gr</td>
-        <td>2</td>
-        <td class="price-cell">$4.00</td>
-        <td class="price-cell">$0.44</td>
-        <td class="action-cell">+</td>
-      </tr>
-      <tr>
-        <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-        <td>*</td>
-        <td>Breaktime Chocolate Chip Cookies</td>
-        <td>Maxi</td>
-        <td>Dare</td>
-        <td>250 gr</td>
-        <td>0</td>
-        <td class="price-cell">$4.00</td>
-        <td class="price-cell">$0.44</td>
-        <td class="action-cell">+</td>
-      </tr>
-      <tr>
-        <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-        <td>*</td>
-        <td>Chocolate Chip Cookies,18 Pack</td>
-        <td>Provigo</td>
-        <td>In-store Bakery</td>
-        <td>774 gr</td>
-        <td>0</td>
-        <td class="price-cell">$5.99</td>
-        <td class="price-cell">$0.77</td>
-        <td class="action-cell">+</td>
-      </tr>
-       <tr>
-        <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-        <td>*</td>
-        <td>Chocolate Chip Cookies,18 Pack</td>
-        <td>Provigo</td>
-        <td>In-store Bakery</td>
-        <td>774 gr</td>
-        <td>0</td>
-        <td class="price-cell">$5.99</td>
-        <td class="price-cell">$0.77</td>
-        <td class="action-cell">+</td>
-      </tr>
-       <tr>
-        <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-        <td>*</td>
-        <td>Oatmeal Chocolate Chip Cookies,18 Pack</td>
-        <td>Provigo</td>
-        <td>In-store Bakery</td>
-        <td>774 gr</td>
-        <td>0</td>
-        <td class="price-cell">$5.99</td>
-        <td class="price-cell">$0.77</td>
-        <td class="action-cell">+</td>
-      </tr>
-       <tr>
-        <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-        <td>*</td>
-        <td>Chocolate Chip Cookies,18 Pack</td>
-        <td>Loblaws</td>
-        <td>In-store Bakery</td>
-        <td>774 gr</td>
-        <td>0</td>
-        <td class="price-cell">$5.99*</td>
-        <td class="price-cell">$0.77</td>
-        <td class="action-cell">+</td>
-      </tr>
-       <tr>
-        <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-        <td>*</td>
-        <td>Oatmeal Chocolate Chip Cookies,18 Pack</td>
-        <td>Loblaws</td>
-        <td>In-store Bakery</td>
-        <td>774 gr</td>
-        <td>0</td>
-        <td class="price-cell">$5.99*</td>
-        <td class="price-cell">$0.77</td>
-        <td class="action-cell">+</td>
-      </tr>
-       <tr>
-        <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-        <td>*</td>
-        <td>Chocolate Chip Cookies, Breaktime</td>
-        <td>Metro</td>
-        <td>Dare</td>
-        <td>250 gr</td>
-        <td>0</td>
-        <td class="price-cell">$1.99</td>
-        <td class="price-cell">$0.80</td>
-        <td class="action-cell">+</td>
-      </tr>
-       <tr>
-        <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-        <td>*</td>
-        <td>Chocolate Chip Cookies, Breaktime</td>
-        <td>Super C</td>
-        <td>Dare</td>
-        <td>250 gr</td>
-        <td>0</td>
-        <td class="price-cell">$1.99</td>
-        <td class="price-cell">$0.80</td>
-        <td class="action-cell">+</td>
-      </tr>
-    </tbody>
-  </table>
+  <% if @product_prices.any? %>
+            <table class="product-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th>Product Name</th>
+                  <th>Store</th>
+                  <th>Brand</th>
+                  <th>Weight</th>
+                  <th>Price Ea.</th>
+                  <th>Price/100 units</th>
+                  <th>Add to my list</th>
+                </tr>
+              </thead>
+              <tbody>
+          <% @product_prices.each do |product_price| %>
+                <tr>
+                  <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
+                  <td><img src=<%= product_price.product.img_url %> alt="" style="width:60px; height:48px;"></td>
+                  <td><%= product_price.product.name %></td>
+                  <td><%= product_price.store.name%></td>
+                  <td><%= product_price.product.brand %></td>
+                  <td><%= product_price.product.weight %></td>
+                  <td class="price-cell"><%= product_price.price %></td>
+                  <td class="price-cell"><%= product_price.product.price_per_100_unit %></td>
+                  <td class="action-cell">+</td>
+                </tr>
+              <% end %>
+              </tbody>
+            </table>
+        <% else %>
+          <em>Sorry, no food found.</em>
+        <% end %>
 </body>
 </html>
