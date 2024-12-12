@@ -1,7 +1,7 @@
 <div class="search">
   <i data-feather="search" class="search__icon"></i>
 
-  <%= form_with url: products_path, method: :get, class: "search__form" do %>
+  <%= form_with url: products_path, method: :get, html: {data: {turbo_frame: :product_table, turbo_action: :advance}}, class: "search__form" do %>
     <%= text_field_tag :query,
       params[:query],
       class: "search__input",

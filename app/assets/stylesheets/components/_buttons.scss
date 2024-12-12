@@ -112,3 +112,51 @@
       }
   }
 }
+
+.btn-filter {
+  // Base button styles
+  display: flex;
+  background-color: white;
+  padding: $spacing-4 $spacing-4;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 100px;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin: $spacing-4;
+  align-items: center;
+
+  &:hover {
+      background-color: $orange-200;
+  }
+
+  &:active {
+      background-color: white;
+  }
+
+  &:disabled {
+      opacity: 40%;
+      cursor: not-allowed;
+  }
+
+  // Modifier: dashed border
+  &--dashed {
+      border: 2px dashed black;
+
+      &:hover {
+          background-color: $orange-200;
+      }
+
+      &:active {
+          background-color: $orange-400;
+      }
+
+      &:disabled {
+          opacity: 40%;
+      }
+  }
+}
