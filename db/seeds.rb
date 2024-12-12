@@ -12,9 +12,9 @@ require 'json'
 
 # User.destroy_all
 ##### UNCOMMENT THESE 4 LINES THE FIRST TIME
-#  ProductPrice.destroy_all
-#  Store.destroy_all
-#  Product.destroy_all
+ProductPrice.destroy_all
+Store.destroy_all
+Product.destroy_all
 ##### COMMENT THEM AGAIN AFTER YOU RUN RAILS DB SEED
 
 # List.destroy_all
@@ -34,6 +34,8 @@ data2 = products
 products = JSON.parse(file_content_loblaws)
 data3 = products
 data_list = [data1, data2, data3]
+
+fake_data_for_product_price = [1.1, 1.2, 1.3, 1.4, 1.5, 1.6]
 
 # puts "Creating user..."
 # user1 = User.create!(email: "test@email.com", password: "123456")
@@ -74,6 +76,13 @@ data_list.each_with_index do |data, index|
       puts "Creating product_price..."
       ProductPrice.create!(price: product["price"], product: data_product, scraping_date: Time.now, store: stores[index])
       puts "Product price created!"
+      fake_data_for_product_price.each do |fake_data|
+        puts "Creating fake product_price..."
+        product_price = product["price"].delete('$').to_f
+        new_price = "$#{(product_price * fake_data).round(2)}"
+        ProductPrice.create!(price: new_price, product: data_product, scraping_date: Time.now, store: stores[index])
+        puts "Fake product price created!"
+      end
     end
   end
 end
