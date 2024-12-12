@@ -1,5 +1,13 @@
 <!-- Navbar -->
 <%= render "shared/navbar" %>
+
+  <!--End of Navbar -->
+  <div class="container-left-align">
+    <!--Search bar -->
+    <%= render "shared/search_bar" %>
+      <!--End of Search bar -->
+  </div>
+
 <!--End of Navbar -->
 <div class="container-left-align">
   <!--Search bar -->
@@ -41,6 +49,7 @@
 
   <!--End of Carrousel -->
 
+  <div class="container">
 
   <div class="container-main container-main--purple">
     <div class="container-title">
@@ -139,86 +148,39 @@
     </div>
   </div>
 </div>
-<!--Product card horizontal-->
-<div class="container-main container-main--green">
-
-
-  <div class="container-title">
-    <%= image_tag "greendot.svg", width: 12 %>
-    TRENDING LOW
-  </div>
-  <div class="container-p">Food items that reached their lowest recorded across banners.</div>
-  <div class="container-hrz">
-    <% @trending_lows.first(@products_per_page).each do |product_price| %>
-    <div class="product-card-hrz">
-      <div class="product-card-container"><!--Product cards -->
-        <div class="container-hrz">
-          <div class="product-card-hrz"> <!-- Bloc-01 -->
-            <div class="product-card-hrz__bloc-01">
-              <div class="product-card-hrz__bloc-01__col-left">
-
-                <h6><%= product_price.product.name %></h6>
-                <div class="price-weight"><%= product_price.product.weight %></div>
-              </div>
-              <div class="product-card-hrz__bloc-01__col-right">
-                <h6><%= product_price.price %> ea</h6>
-                <div class="price-weight"><%= product_price.product.price_per_100_unit %></div>
-              </div>
-            </div>
-
-            <!-- Bloc-02 -->
-
-            <div class="product-card-hrz__bloc-02">
-              <div class="section-01"> <!-- Container left -->
-                <div class="product-card-hrz__bloc-02__container-left">
-                  <img src="<%= product_price.product.img_url %>">
-                </div> <!-- Container right -->
-                <div class="product-card-hrz__bloc-02__container-right"> <!-- Column 1 -->
-                  <div class="price-column">
-                    <div class="price-item">
-                      <div class="status-dot status-dot-highest"></div>
-                      <div class="price-content">
-                        <div class="price-title">Highest <%= product_price.price %> ea</div>
-                        <div class="price-weight"><%= product_price.product.price_per_100_unit %></div>
-                      </div>
-                    </div>
-                    <div class="price-item">
-                      <div class="status-dot status-dot-lowest"></div>
-                      <div class="price-content">
-                        <div class="price-title">Lowest <%= product_price.price %> ea</div>
-                        <div class="price-weight"><%= product_price.product.price_per_100_unit %></div>
-                      </div>
-                    </div>
-                  </div> <!-- Column 2 -->
-                  <div class="price-column">
-                    <div class="price-item">
-                      <div class="status-dot status-dot-avg"></div>
-                      <div class="price-content">
-                        <div class="price-title">Average <%= product_price.price %> ea</div>
-                        <div class="price-weight"><%= product_price.product.price_per_100_unit %></div>
-                        <div class="product-card__bloc-05">
-                          <div class="link">
-                            <span>More details</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="container-main container-main--green">
+        <div class="container-title">
+          <%= image_tag "greendot.svg" , width: 12 %>
+            TRENDING LOW
         </div>
+        <div class="container-p">Food items that reached their lowest recorded across banners.</div>
+
+        <div class="product-carousel relative" data-controller="carousel"
+          data-total-pages="<%= (@products.size.to_f / 3).ceil %>">
+          <%# LEFT ARROW %>
+            <button class="carousel-nav carousel-prev <%= 'hidden' if @current_page == 1 %>"
+              data-action="click->carousel#previous">
+              <i data-feather="chevron-left"></i>
+            </button>
+
+            <div class="product-card-container">
+              <% @trending_lows.each_slice(3).with_index(1) do |page_product_prices, index| %>
+
+                <div class="product-page <%= 'hidden' unless index == @current_page %>" data-page="<%= index %>">
+                  <% page_product_prices.each do |product_price| %>
+                    <%= render "shared/product_card_green" , product_price: product_price %>
+                      <% end %>
+
+
+            <%# RIGHT ARROW %>
+            <button class="carousel-nav carousel-next <%= 'hidden' if @current_page == (@products.size.to_f / 3).ceil %>"
+              data-action="click->carousel#next">
+              <i data-feather="chevron-right"></i>
+            </button>
+        </div>
+
       </div>
-
-
-    </div>
-    <% end %>
-
-
-
-
   </div>
-  <!--End Product cards 01-->
-</div>
-</div>
+  </div>
+  </div>
+
