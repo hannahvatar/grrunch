@@ -30,6 +30,17 @@
 
 }
 
+.container-2-col {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.container-2-col img {
+  display: flex;
+  width: 300px;
+}
+
 .container-main {
   display: flex;
   justify-content: center;
