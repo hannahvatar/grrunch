@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="style.scss">
 </head>
 <body>
+  <%= turbo_frame_tag :product_table do %>
   <% if @product_prices.any? %>
-            <table class="product-table">
+            <table class="product-table cellSpacing='0'">
               <thead>
                 <tr>
                   <th></th>
@@ -17,8 +18,25 @@
                   <th>Store</th>
                   <th>Brand</th>
                   <th>Weight</th>
-                  <th>Price Ea.</th>
-                  <th>Price/100 units</th>
+                  <th>
+                    <div class="display-flex align-center">
+                      <p>Price Ea.</p>
+                      <!--button type="button "class="default btn-filter">
+                        <i data-feather="filter"></i>
+                      </button-->
+                      <%= button_to products_path, params: {query: params[:query], sort_by: "price"}, method: :get, class: "default btn-filter" do %>
+                        <i data-feather="filter"></i>
+                      <% end %>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="display-flex align-center">
+                      <p>Price/100 units</p>
+                      <%= button_to products_path, params: {query: params[:query], sort_by: "price_per_100_unit"}, method: :get, class: "default btn-filter" do %>
+                        <i data-feather="filter"></i>
+                      <% end %>
+                    </div>
+                  </th>
                   <th>Add to my list</th>
                 </tr>
               </thead>
@@ -27,7 +45,7 @@
                 <tr>
                   <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
                   <td><img src=<%= product_price.product.img_url %> alt="" style="width:60px; height:48px;"></td>
-                  <td><%= product_price.product.name %></td>
+                  <div class="overflow"><td><%= product_price.product.name %></td></div>
                   <td><%= product_price.store.name%></td>
                   <td><%= product_price.product.brand %></td>
                   <td><%= product_price.product.weight %></td>
@@ -41,5 +59,6 @@
         <% else %>
           <em>Sorry, no food found.</em>
         <% end %>
+  <% end %>
 </body>
 </html>
