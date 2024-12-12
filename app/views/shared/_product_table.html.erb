@@ -19,15 +19,15 @@
                   <th>Brand</th>
                   <th>Weight</th>
                   <th>
-                    <div class="display-flex align-center">
-                      <p>Price Ea.</p>
-                      <!--button type="button "class="default btn-filter">
-                        <i data-feather="filter"></i>
-                      </button-->
-                      <%= button_to products_path, params: {query: params[:query], sort_by: "price"}, method: :get, class: "default btn-filter" do %>
-                        <i data-feather="filter"></i>
-                      <% end %>
-                    </div>
+                    <%= link_to products_path(query: params[:query], sort_by: "price"),
+                        class: "btn-filter",
+                        data: {
+                          turbo: false
+                        } do %>
+                      <i data-feather="filter"></i>
+                    <% end %>
+
+
                   </th>
                   <th>
                     <div class="display-flex align-center">
