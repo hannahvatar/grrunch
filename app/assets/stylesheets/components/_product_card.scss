@@ -133,6 +133,7 @@ margin: 8px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      max-width: 200px;
      }
 
     p {
@@ -194,8 +195,6 @@ margin: 8px;
       width: 100%;
       height: 22px;
       white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
      }
 
   }

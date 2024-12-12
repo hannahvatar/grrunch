@@ -1,0 +1,80 @@
+<div class="product-card">
+  <div class="product-card__bloc-01">
+    <div class="product-card__bloc-01__col-left">
+      <h6>
+        <%= product.name %>
+      </h6>
+      <p>
+        <%= product.weight %>
+      </p>
+    </div>
+    <div class="product-card__bloc-01__col-right">
+      <i data-feather="map-pin"></i>
+      <div class="store">
+        <%= product.stores.first&.name %>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-card__bloc-02">
+    <div class="product-card__bloc-02__col-left">
+      <img src="<%= product.img_url %>">
+    </div>
+    <div class="product-card__bloc-02__col-right">
+      <% latest_price=product.product_prices[0] %>
+        <h6>
+          <%= latest_price&.price %>
+        </h6>
+        <p>
+          <%= product.price_per_100_unit %>
+        </p>
+    </div>
+  </div>
+
+  <div class="product-card__bloc-03">
+    <%= render "shared/echart" , unique_id: "product-#{product.id}" , product: product%>
+  </div>
+
+  <div class="product-card__bloc-04">
+    <div class="row-01">
+      <div class="status-dot-highest"></div>
+      <div class="row-01-left">
+        <% @highest_price=product.product_prices[0].highest_price %>
+          <div class="price-title">Highest $<%= @highest_price[:price] %>
+          </div>
+          <div class="price-weight">$<%= @highest_price[:lowest_price] %>/<%= @highest_price[:quantity] %>
+                <%= @highest_price[:unit] %>
+          </div>
+      </div>
+      <div class="status-dot-avg"></div>
+      <div class="row-01-right">
+        <% @average_price=product.product_prices[0].average_price %>
+          <div class="price-title">Average $<%= @average_price[:price] %>
+          </div>
+          <div class="price-weight">$<%= @average_price[:lowest_price] %>/<%= @average_price[:quantity] %>
+                <%= @average_price[:unit] %>
+          </div>
+      </div>
+    </div>
+    <div class="row-02">
+      <div class="status-dot-lowest"></div>
+      <div class="row-01-left">
+        <% @product_price=ProductPrice.find_by(product: product) %>
+          <div class="price-title">Lowest <%= @product_price.price %>
+          </div>
+          <div class="price-weight">
+            <%= product.price_per_100_unit %>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-card__bloc-05">
+    <button class="btn-secondary btn-secondary--dashed">
+      Add to list
+      <i data-feather="plus-circle"></i>
+    </button>
+    <div class="link">
+      <span>More details</span>
+    </div>
+  </div>
+</div>
