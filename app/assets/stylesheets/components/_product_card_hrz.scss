@@ -104,6 +104,9 @@
     font-size: 16px;
     color: black;
     margin: 0;
+    overflow: hidden; /* Prevent content from overflowing */
+    text-overflow: ellipsis;
+    ;
   }
 
   .price-title {
