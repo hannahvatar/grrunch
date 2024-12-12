@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   # "As a guest user, I want to search a product type"
   # get "/products" => "products#index"
-  resources :products, only:[:index]
+  resources :products, only: [:index]
   # "As a guest user, I want to select multiple stores"
   get "/preferences" => "pages#preferences"
 

@@ -8,7 +8,6 @@ class PagesController < ApplicationController
     @current_page = params[:page]&.to_i || 1
     @products_per_page = 3
     @total_pages = (@products.size.to_f / @products_per_page).ceil
-
   end
 
   def preferences
