@@ -1,11 +1,15 @@
 .product-card-hrz {
   display: flex;
-  width: 436px;
+  // width: 436px;
+  width: 316px;
+  gap: 8px;
+  margin: 8px;
   flex-direction: column;
   align-items: flex-start;
   border-radius: 32px;
   box-shadow: -2px 2px 0px 0px $green-500;
   background: white;
+  font-size: 8px;
 
   // Bloc-01
   &__bloc-01 {
@@ -42,7 +46,7 @@
     .section-01 {
       display: flex;
       align-items: flex-start;
-      gap: $spacing-8;
+      // gap: $spacing-8;
       align-self: stretch;
       width: 100%;
     }
@@ -63,7 +67,7 @@
 
     &__container-right {
       display: flex;
-      gap: $spacing-20;
+      // gap: $spacing-20;
       flex: 1;
       padding-left: $spacing-20;
 

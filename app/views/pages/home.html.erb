@@ -33,77 +33,80 @@
   <!--End of Carrousel -->
 
   <div class="container-main container-main--purple">
-  <div class="inner-container-main">
-    <div class="container-title">
-      <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733783819/status-lowest_obdp8y.svg" alt="">
-      LOWEST RECORDED TODAY
-    </div>
+    <div class="inner-container-main">
 
-    <div class="container-p">
-      Food items that reached their lowest recorded across banners as of today.
-    </div>
-
-    <div class="product-carousel relative" data-controller="carousel" data-total-pages=<%= (@products.size.to_f / 3).ceil %>>
-      <%# LEFT ARROW %>
-      <button class="carousel-nav carousel-prev <%= 'hidden' if @current_page == 1 %>" data-action="click->carousel#previous">
-        <i data-feather="chevron-left"></i>
-      </button>
-
-      <div class="product-card-container">
-        <% @products.each_slice(3).with_index(1) do |page_products, index| %>
-
-          <div class="product-page <%= 'hidden' unless index == @current_page %>" data-page="<%= index %>">
-            <% page_products.each do |product| %>
-              <%= render "shared/product_card_purple" , product: product %>
-            <% end %>
-          </div>
-
-        <% end %>
+      <div class="container-title">
+        <img src="https://res.cloudinary.com/diwuyv3c8/image/upload/v1733783819/status-lowest_obdp8y.svg" alt="">
+        LOWEST RECORDED TODAY
       </div>
 
-      <%# RIGHT ARROW %>
-      <button class="carousel-nav carousel-next <%= 'hidden' if @current_page == (@products.size.to_f / 3).ceil %>" data-action="click->carousel#next">
-        <i data-feather="chevron-right"></i>
-      </button>
-    </div>
+      <div class="container-p">
+        Food items that reached their lowest recorded across banners as of today.
+      </div>
+
+      <div class="product-carousel relative" data-controller="carousel" data-total-pages=<%= (@products.size.to_f / 3).ceil %>>
+        <%# LEFT ARROW %>
+        <button class="carousel-nav carousel-prev <%= 'hidden' if @current_page == 1 %>" data-action="click->carousel#previous">
+          <i data-feather="chevron-left"></i>
+        </button>
+
+        <div class="product-card-container">
+          <% @products.each_slice(3).with_index(1) do |page_products, index| %>
+
+            <div class="product-page <%= 'hidden' unless index == @current_page %>" data-page="<%= index %>">
+              <% page_products.each do |product| %>
+                <%= render "shared/product_card_purple" , product: product %>
+              <% end %>
+            </div>
+
+          <% end %>
+        </div>
+
+        <%# RIGHT ARROW %>
+        <button class="carousel-nav carousel-next <%= 'hidden' if @current_page == (@products.size.to_f / 3).ceil %>" data-action="click->carousel#next">
+          <i data-feather="chevron-right"></i>
+        </button>
+      </div>
+
     </div>
   </div>
 
   <div class="container-main container-main--green">
     <div class="inner-container-main">
-    <div class="container-title">
-      <%= image_tag "greendot.svg" , width: 12 %>
-      TRENDING LOW
-    </div>
-
-    <div class="container-p">
-      Food items that reached their lowest recorded across banners.
-    </div>
-
-    <div class="product-carousel relative" data-controller="carousel" data-total-pages=<%= (@products.size.to_f / 3).ceil %>>
-      <%# LEFT ARROW %>
-      <button class="carousel-nav carousel-prev <%= 'hidden' if @current_page == 1 %>"
-        data-action="click->carousel#previous">
-        <i data-feather="chevron-left"></i>
-      </button>
-
-      <div class="product-card-container">
-        <% @trending_lows.each_slice(3).with_index(1) do |page_product_prices, index| %>
-
-          <div class="product-page <%= 'hidden' unless index == @current_page %>" data-page="<%= index %>">
-            <% page_product_prices.each do |product_price| %>
-              <%= render "shared/product_card_green" , product_price: product_price %>
-            <% end %>
-          </div>
-
-        <% end %>
+      <div class="container-title">
+        <%= image_tag "greendot.svg" , width: 12 %>
+        TRENDING LOW
       </div>
 
-      <%# RIGHT ARROW %>
-      <button class="carousel-nav carousel-next <%= 'hidden' if @current_page == (@products.size.to_f / 3).ceil %>"
-        data-action="click->carousel#next">
-        <i data-feather="chevron-right"></i>
-      </button>
-    </div>
+      <div class="container-p">
+        Food items that reached their lowest recorded across banners.
+      </div>
+
+      <div class="product-carousel relative" data-controller="carousel" data-total-pages=<%= (@products.size.to_f / 3).ceil %>>
+        <%# LEFT ARROW %>
+        <button class="carousel-nav carousel-prev <%= 'hidden' if @current_page == 1 %>"
+          data-action="click->carousel#previous">
+          <i data-feather="chevron-left"></i>
+        </button>
+
+        <div class="product-card-container">
+          <% @trending_lows.each_slice(3).with_index(1) do |page_product_prices, index| %>
+
+            <div class="product-page <%= 'hidden' unless index == @current_page %>" data-page="<%= index %>">
+              <% page_product_prices.each do |product_price| %>
+                <%= render "shared/product_card_green" , product_price: product_price %>
+              <% end %>
+            </div>
+
+          <% end %>
+        </div>
+
+        <%# RIGHT ARROW %>
+        <button class="carousel-nav carousel-next <%= 'hidden' if @current_page == (@products.size.to_f / 3).ceil %>"
+          data-action="click->carousel#next">
+          <i data-feather="chevron-right"></i>
+        </button>
+
+      </div>
   </div>
 </div>
