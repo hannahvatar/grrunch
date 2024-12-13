@@ -28,6 +28,7 @@ p {
 }
 
 .heading {
+
   font-family: 'Open Sans', sans-serif;
   font-size: 44px;
   font-weight: 900;
@@ -35,5 +36,15 @@ p {
   display: flex;
   justify-content: flex-start;
   width: 100%;
+
+}
+
+.highlight {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  height: 60px;
+  background-color: yellow;;
 
 }
