@@ -24,7 +24,7 @@
 
           <th>
             <div class="display-flex align-center">
-              <p>Price/100 units</p>
+              <p>Price/Quantity</p>
               <%= button_to products_path, params: {query: params[:query],
                                                     sort_by: "price_per_100_unit",
                                                     sort_order: params[:sort_order] == "asc" ? "desc" : "asc"},

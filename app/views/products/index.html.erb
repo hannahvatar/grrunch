@@ -1,6 +1,10 @@
 <%= render "shared/navbar" %>
 <div class="container-left-align">
   <%= render "shared/search_bar" %>
+  <div class="display-flex">
+    <%= render "shared/product_card_product_page" %>
+    <%= render "shared/echart", unique_id: "product-#{@product.id}", product: @product.product %>
+  </div>
 </div>
 
 <%= render "shared/product_table" %>

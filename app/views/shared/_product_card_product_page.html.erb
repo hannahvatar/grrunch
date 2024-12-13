@@ -1,0 +1,70 @@
+<div class="product-card-hrz">
+  <!-- Bloc-01 -->
+  <div class="product-card-hrz__bloc-01">
+    <div class="product-card-hrz__bloc-01__col-left">
+      <h6 style="overflow: hidden;text-overflow: ellipsis; max-width: 200px;white-space: nowrap;">
+        <%= @product.product.name %>
+      </h6>
+      <div class="price-weight">
+        <%= @product.product.weight %>
+      </div>
+    </div>
+
+    <div class="product-card-hrz__bloc-01__col-right">
+      <h6>
+        <% latest_price = @product.product.product_prices[0] %>
+        <%= latest_price&.price %>
+      </h6>
+      <div class="price-weight">
+        <%= @product.product.price_per_100_unit %>
+      </div>
+    </div>
+  </div>
+  <!-- Bloc-02 -->
+  <div class="product-card-hrz__bloc-02">
+    <div class="section-01"> <!-- Container left -->
+      <div class="product-card-hrz__bloc-02__container-left">
+        <img src="<%= @product.product.img_url %>">
+      </div> <!-- Container right -->
+      <div class="product-card-hrz__bloc-02__container-right"> <!-- Column 1 -->
+        <div class="price-column">
+          <div class="price-item">
+            <div class="status-dot status-dot-highest"></div>
+            <div class="price-content">
+              <% @highest_price = @product.product.product_prices[0].highest_price %>
+              <div class="price-title">Highest $<%= @highest_price[:price] %></div>
+              <div class="price-weight">$<%= @highest_price[:lowest_price] %>/<%= @highest_price[:quantity] %> <%= @highest_price[:unit] %></div>
+            </div>
+          </div>
+
+          <div class="price-item">
+            <div class="status-dot status-dot-lowest"></div>
+            <div class="price-content">
+              <% @lowest_price = ProductPrice.find_by(product: @product.product) %>
+              <div class="price-title">Lowest <%= @lowest_price.price %></div>
+              <div class="price-weight">
+                <%= @product.product.price_per_100_unit %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Column 2 -->
+        <div class="price-column">
+          <div class="price-item">
+            <div class="status-dot status-dot-avg"></div>
+            <div class="price-content">
+              <% @average_price = @product.product.product_prices[0].average_price %>
+              <div class="price-title">Average $<%= @average_price[:price] %></div>
+              <div class="price-weight">$<%= @average_price[:lowest_price] %>/<%= @average_price[:quantity] %> <%= @average_price[:unit] %></div>
+              <div class="product-card__bloc-05">
+                <div class="link">
+                  <span>More details</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
