@@ -53,24 +53,21 @@ p {
 .highlight-green {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 32px;
+  font-size: 44px;
   font-weight: 900;
+  background-color: $green-200 !important;
   height: 40px;
-  background-color: $green-300 !important;
   padding-left: 8px;
   padding-right: 8px;
-
 }
 
 .highlight-purple {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
+  background-color: $purple-200 !important;
   font-size: 32px;
   font-weight: 900;
   height: 40px;
-  background-color: $purple-100 !important;
   padding-left: 8px;
   padding-right: 8px;
-
-
 }
