@@ -1,68 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.scss">
-</head>
-<body>
-  <%= turbo_frame_tag :product_table do %>
+
+<%= turbo_frame_tag :product_table do %>
   <% if @product_prices.any? %>
-            <table class="product-table cellSpacing='0'">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th>Product Name</th>
-                  <th>Store</th>
-                  <th>Brand</th>
-                  <th>Weight</th>
-                  <th>
-                     <div class="display-flex align-center">
-                        <p>Price Ea.</p>
-                        <%= link_to products_path(query: params[:query], sort_by: "price"),
-                            class: "btn-filter",
-                            data: {
-                              turbo: false
-                            } do %>
-                          <i data-feather="filter"></i>
-                        <% end %>
-                      </div>
-                  </th>
-
-
-
-                  <th>
-                    <div class="display-flex align-center">
-                      <p>Price/100 units</p>
-                      <%= button_to products_path, params: {query: params[:query], sort_by: "price_per_100_unit"}, method: :get, class: "default btn-filter",  data: { turbo: false } do %>
-                        <i data-feather="filter"></i>
-                      <% end %>
-                    </div>
-                  </th>
-                  <th>Add to my list</th>
-                </tr>
-              </thead>
-              <tbody>
-          <% @product_prices.each do |product_price| %>
-                <tr>
-                  <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
-                  <td><img src=<%= product_price.product.img_url %> alt="" style="width:60px; height:48px;"></td>
-                  <div class="overflow"><td><%= product_price.product.name %></td></div>
-                  <td><%= product_price.store.name%></td>
-                  <td><%= product_price.product.brand %></td>
-                  <td><%= product_price.product.weight %></td>
-                  <td class="price-cell"><%= product_price.price %></td>
-                  <td class="price-cell"><%= product_price.product.price_per_100_unit %></td>
-                  <td class="action-cell">+</td>
-                </tr>
+    <table class="product-table cellSpacing='0'">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th>Product Name</th>
+          <th>Store</th>
+          <th>Brand</th>
+          <th>Weight</th>
+          <th>
+            <div class="display-flex align-center">
+              <p>Price Ea.</p>
+              <%= button_to products_path, params: {query: params[:query],
+                                                    sort_by: "price",
+                                                    sort_order: params[:sort_order] == "asc" ? "desc" : "asc"},
+                                           method: :get, class: "default btn-filter",  data: { turbo: false } do %>
+                <i data-feather="filter"></i>
               <% end %>
-              </tbody>
-            </table>
-        <% else %>
-          <em>Sorry, no food found.</em>
+            </div>
+          </th>
+
+          <th>
+            <div class="display-flex align-center">
+              <p>Price/100 units</p>
+              <%= button_to products_path, params: {query: params[:query],
+                                                    sort_by: "price_per_100_unit",
+                                                    sort_order: params[:sort_order] == "asc" ? "desc" : "asc"},
+                                           method: :get, class: "default btn-filter",  data: { turbo: false } do %>
+                <i data-feather="filter"></i>
+              <% end %>
+            </div>
+          </th>
+          <th>Add to my list</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @product_prices.each do |product_price| %>
+          <tr>
+            <td><i class="fa-solid fa-circle small-icon" style="color: #96e696;"></i></td>
+            <td><img src=<%= product_price.product.img_url %> alt="" style="width:60px; height:48px;"></td>
+            <div class="overflow"><td><%= product_price.product.name %></td></div>
+            <td><%= product_price.store.name%></td>
+            <td><%= product_price.product.brand %></td>
+            <td><%= product_price.product.weight %></td>
+            <td class="price-cell"><%= product_price.price %></td>
+            <td class="price-cell"><%= product_price.product.price_per_100_unit %></td>
+            <td class="action-cell">+</td>
+          </tr>
         <% end %>
+      </tbody>
+    </table>
+  <% else %>
+    <em>Sorry, no food found.</em>
   <% end %>
-</body>
-</html>
+<% end %>
