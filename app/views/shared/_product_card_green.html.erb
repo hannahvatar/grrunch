@@ -3,20 +3,22 @@
   <div class="product-card-hrz__bloc-01">
     <div class="product-card-hrz__bloc-01__col-left">
       <h6 style="overflow: hidden;text-overflow: ellipsis; max-width: 200px;white-space: nowrap;">
+        <% @thrid_product = ProductPrice.where(product: product)[2] %>
+
         <%= product.name %>
       </h6>
       <div class="price-weight">
-        <%= product.weight %>
+        <%= @thrid_product.product.weight %>
       </div>
     </div>
 
     <div class="product-card-hrz__bloc-01__col-right">
       <h6>
         <% latest_price = product.product_prices[0] %>
-        <%= latest_price&.price %>
+        <%= @thrid_product.price %>
       </h6>
       <div class="price-weight">
-        <%= product.price_per_100_unit %>
+        <%= @thrid_product.product.price_per_100_unit %>
       </div>
     </div>
   </div>
@@ -25,7 +27,7 @@
   <div class="product-card-hrz__bloc-02">
     <div class="section-01"> <!-- Container left -->
       <div class="product-card-hrz__bloc-02__container-left">
-        <img src="<%= product.img_url %>">
+        <img src="<%= @thrid_product.product.img_url %>">
       </div> <!-- Container right -->
       <div class="product-card-hrz__bloc-02__container-right"> <!-- Column 1 -->
         <div class="price-column">
