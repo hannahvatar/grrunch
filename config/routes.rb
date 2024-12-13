@@ -21,4 +21,7 @@ Rails.application.routes.draw do
 
   # "As a guest user, I want to view the items in my list"
   get "/list_items" => "list_items#index"
+
+  get 'about', to: 'pages#about'
+
 end

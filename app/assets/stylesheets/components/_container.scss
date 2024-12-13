@@ -22,17 +22,31 @@
   width: 100%;
   justify-content: flex-start;
   margin-left: 32px;;
+
 }
 
 .product-card-container {
   display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
   gap: 20px;
-
 }
+
+.container-2-col {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.container-2-col img {
+  display: flex;
+  width: 300px;
+}
+
 
 .container-main {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   padding: $spacing-32;
   border-radius: $spacing-24;
@@ -42,6 +56,19 @@
   // width: 1500px;
   // min-width: 1400px;
   // max-width: 1500px !important;
+  margin: 0, 80px !important;
+  padding: 0 !important;
+  min-width: 1400px !important;
+  width: 1500px !important;
+  max-width: 1500px !important;
+
+  .inner-container-main {
+    width: 100%;
+    margin: 40px !important;
+    padding: 0, 60px !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
   .container-title {
       font-family: 'Open Sans', sans-serif;
@@ -91,4 +118,34 @@
    &--green {
     background-color: #F7FDF7;
      }
+}
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 32px; /* Replace $spacing-32 with a valid value */
+  margin-bottom: 20px; /* Replace $spacing-20 with a valid value */
+  width: 100%;
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+
+// You might also want to add this to ensure the heading stays as one line
+.heading {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  width: 100%; /* Ensure it respects the container's width */
+  white-space: normal; /* Allow text to wrap within the div */
+}
+
+
+.highlight {
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  background-color: #FF7A2A !important;
+  padding: 0 16px;
+  height: auto; /* Remove fixed height */
 }
