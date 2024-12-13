@@ -30,21 +30,47 @@ p {
 .heading {
 
   font-family: 'Open Sans', sans-serif;
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 900;
   margin-top: 20px;
   display: flex;
   justify-content: flex-start;
   width: 100%;
-
 }
 
 .highlight {
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 900;
-  height: 60px;
-  background-color: yellow;;
+  height: 40px;
+  background-color: $orange-300 !important;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+
+.highlight-green {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  height: 40px;
+  background-color: $green-300 !important;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+
+.highlight-purple {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  height: 40px;
+  background-color: $purple-100 !important;
+  padding-left: 8px;
+  padding-right: 8px;
+
 
 }
