@@ -17,6 +17,7 @@ class ProductsController < ApplicationController
     # @products = Product.includes(:stores, :product_prices)
     if params[:query].present?
     @product_prices = @product_prices.search_by_name_and_brand(params[:query])
+    @product_prices = @product_prices.group_by { |p| p.product_id }.map { |_product_id, prices| prices.first }
     @product_prices = @product_prices.sort_by { |p| p.price }
     end
     if params[:sort_by] == "price"
