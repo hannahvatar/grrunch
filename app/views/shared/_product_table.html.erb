@@ -19,20 +19,24 @@
                   <th>Brand</th>
                   <th>Weight</th>
                   <th>
-                    <%= link_to products_path(query: params[:query], sort_by: "price"),
-                        class: "btn-filter",
-                        data: {
-                          turbo: false
-                        } do %>
-                      <i data-feather="filter"></i>
-                    <% end %>
-
-
+                     <div class="display-flex align-center">
+                        <p>Price Ea.</p>
+                        <%= link_to products_path(query: params[:query], sort_by: "price"),
+                            class: "btn-filter",
+                            data: {
+                              turbo: false
+                            } do %>
+                          <i data-feather="filter"></i>
+                        <% end %>
+                      </div>
                   </th>
+
+
+
                   <th>
                     <div class="display-flex align-center">
                       <p>Price/100 units</p>
-                      <%= button_to products_path, params: {query: params[:query], sort_by: "price_per_100_unit"}, method: :get, class: "default btn-filter" do %>
+                      <%= button_to products_path, params: {query: params[:query], sort_by: "price_per_100_unit"}, method: :get, class: "default btn-filter",  data: { turbo: false } do %>
                         <i data-feather="filter"></i>
                       <% end %>
                     </div>
