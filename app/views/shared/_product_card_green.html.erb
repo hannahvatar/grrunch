@@ -31,10 +31,9 @@
             <div class="price-item">
               <div class="status-dot status-dot-highest"></div>
               <div class="price-content">
-                <div class="price-title">Highest <%= product_price.price %> ea</div>
-                <div class="price-weight">
-                  <%= product_price.product.price_per_100_unit %>
-                </div>
+                <% @highest_price = product_price.highest_price %>
+                <div class="price-title">Highest $<%= @highest_price[:price] %></div>
+                <div class="price-weight">$<%= @highest_price[:lowest_price] %>/<%= @highest_price[:quantity] %> <%= @highest_price[:unit] %></div>
               </div>
             </div>
             <div class="price-item">
@@ -51,10 +50,9 @@
             <div class="price-item">
               <div class="status-dot status-dot-avg"></div>
               <div class="price-content">
-                <div class="price-title">Average <%= product_price.price %> ea</div>
-                <div class="price-weight">
-                  <%= product_price.product.price_per_100_unit %>
-                </div>
+                <% @average_price = product_price.average_price %>
+                <div class="price-title">Average $<%= @average_price[:price] %></div>
+                <div class="price-weight">$<%= @average_price[:lowest_price] %>/<%= @average_price[:quantity] %> <%= @average_price[:unit] %></div>
                 <div class="product-card__bloc-05">
                   <div class="link">
                     <span>More details</span>
