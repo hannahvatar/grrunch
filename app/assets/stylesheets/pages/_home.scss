@@ -45,6 +45,26 @@ p {
   font-size: 44px;
   font-weight: 900;
   height: 60px;
-  background-color: yellow;;
+  background-color: $orange-300 !important;
+
+}
+
+.highlight-green {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  height: 60px;
+  background-color: $green-200 !important;
+
+}
+
+.highlight-purple {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 44px;
+  font-weight: 900;
+  height: 60px;
+  background-color: $purple-200 !important;
 
 }
