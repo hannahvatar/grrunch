@@ -90,11 +90,11 @@
         </button>
 
         <div class="product-card-container">
-          <% @trending_lows.each_slice(3).with_index(1) do |page_product_prices, index| %>
+          <% @trending_lows.each_slice(3).with_index(1) do |page_products, index| %>
 
             <div class="product-page <%= 'hidden' unless index == @current_page %>" data-page="<%= index %>">
-              <% page_product_prices.each do |product_price| %>
-                <%= render "shared/product_card_green" , product_price: product_price %>
+              <% page_products.each do |product| %>
+                <%= render "shared/product_card_green" , product: product %>
               <% end %>
             </div>
 
