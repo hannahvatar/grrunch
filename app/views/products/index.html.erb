@@ -3,7 +3,9 @@
   <%= render "shared/search_bar" %>
   <div class="display-flex">
     <%= render "shared/product_card_product_page" %>
-    <%= render "shared/echart", unique_id: "product-#{@product.id}", product: @product.product %>
+    <div class="product-card product-card__bloc-03">
+      <%= render "shared/echart", unique_id: "product-#{@product.id}", product: @product.product %>
+    </div>
   </div>
 </div>
 
